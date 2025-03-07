@@ -1,13 +1,4 @@
-import {
-  BarChart3,
-  ChartNoAxesCombinedIcon,
-  Code2,
-  Globe,
-  Lightbulb,
-  LineChart,
-  MonitorCog,
-  Users,
-} from "lucide-react";
+import { ChartNoAxesCombinedIcon, MonitorCog, Users } from "lucide-react";
 import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { TextAnimate } from "./magicui/text-animate";
@@ -41,7 +32,7 @@ const Divisi = () => {
   return (
     <section id="features" className="mx-auto max-w-screen-2xl py-28">
       <div className="mb-16 text-center">
-        <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-4xl font-bold text-transparent">
+        <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-5xl font-bold text-transparent">
           Divisi di FOSTI UMS
         </h1>
         <TextAnimate

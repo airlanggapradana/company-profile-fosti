@@ -9,15 +9,15 @@ import image from "../../public/image1_blrfxf.webp";
 const Hero = () => {
   return (
     <section
-      className="mx-auto h-screen max-w-screen-2xl py-20 md:py-32"
+      className="mx-auto min-h-screen max-w-screen-2xl py-20 md:py-28"
       id="home"
     >
-      <div className="z-10 grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-        <div>
-          <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-6xl">
+      <div className="flex flex-col items-center justify-center gap-8">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text py-2 text-center text-4xl font-bold tracking-tight text-transparent md:text-6xl">
             Halo! Selamat Datang di FOSTI UMS
           </h1>
-          <p className="mb-8 max-w-2xl text-lg text-muted-foreground">
+          <p className="mb-8 max-w-4xl text-center text-lg text-muted-foreground">
             Bergabunglah dengan kami untuk menjadi bagian dari komunitas
             teknologi yang berperan aktif dalam memajukan dunia IT dan
             pengembangan diri!
@@ -34,7 +34,10 @@ const Hero = () => {
           </div>
         </div>
         <Card className="relative overflow-hidden p-2 shadow-md">
-          <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
+          <ShineBorder
+            shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+            borderWidth={3}
+          />
           <Image src={image} alt="Image" className="w-full rounded-sm" />
         </Card>
       </div>
