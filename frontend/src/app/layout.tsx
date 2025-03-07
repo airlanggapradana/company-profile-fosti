@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
-
+import { ThemeProvider } from "@/utils/theme-provider";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
@@ -14,12 +14,18 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html
+      lang="en"
+      className={`${GeistSans.variable}`}
+      suppressHydrationWarning
+    >
       <body>
-        <main className="gradient-bg-main min-h-screen">
-          <Navbar />
-          {children}
-        </main>
+        <ThemeProvider attribute={"class"} defaultTheme="dark" enableSystem>
+          <main className="gradient-bg-main min-h-screen">
+            <Navbar />
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );

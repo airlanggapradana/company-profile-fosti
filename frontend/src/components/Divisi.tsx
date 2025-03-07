@@ -1,57 +1,45 @@
 import {
   BarChart3,
+  ChartNoAxesCombinedIcon,
   Code2,
   Globe,
   Lightbulb,
   LineChart,
+  MonitorCog,
   Users,
 } from "lucide-react";
 import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { TextAnimate } from "./magicui/text-animate";
+import AnimatedContent from "./AnimatedContent/AnimatedContent";
 
 const divisi = [
   {
-    icon: <BarChart3 className="mb-4 h-10 w-10 text-primary" />,
-    title: "Advanced Analytics",
-    description:
-      "Gain valuable insights with our powerful analytics tools. Track performance and make data-driven decisions.",
-  },
-  {
-    icon: <Globe className="mb-4 h-10 w-10 text-primary" />,
-    title: "Global Reach",
-    description:
-      "Expand your business globally with our international payment processing and multi-language support.",
-  },
-  {
     icon: <Users className="mb-4 h-10 w-10 text-primary" />,
-    title: "Team Collaboration",
+    title: "Keorganisasian",
+    delay: 100,
     description:
-      "Foster teamwork with real-time collaboration tools. Share projects and communicate effectively.",
+      "Divisi yang menjalin hubungan antar anggota dan mempersiapkan calon anggota baru FOSTI UMS.",
   },
   {
-    icon: <Lightbulb className="mb-4 h-10 w-10 text-primary" />,
-    title: "Innovative Solutions",
+    icon: <MonitorCog className="mb-4 h-10 w-10 text-primary" />,
+    title: "Riset dan Teknologi",
+    delay: 250,
     description:
-      "Stay ahead of the curve with our cutting-edge technology and innovative business solutions.",
+      "Divisi yang melakukan penelitian dan pengembangan teknologi open source untuk FOSTI dan masyarakat.",
   },
   {
-    icon: <LineChart className="mb-4 h-10 w-10 text-primary" />,
-    title: "Growth Strategies",
+    icon: <ChartNoAxesCombinedIcon className="mb-4 h-10 w-10 text-primary" />,
+    title: "Hubungan Publik",
+    delay: 350,
     description:
-      "Implement proven growth strategies with our comprehensive suite of business development tools.",
-  },
-  {
-    icon: <Code2 className="mb-4 h-10 w-10 text-primary" />,
-    title: "Developer API",
-    description:
-      "Integrate our platform with your existing systems using our robust and well-documented API.",
+      "Divisi yang menjalin hubungan dan kerja sama dengan berbagai pihak untuk memperluas jaringan FOSTI UMS.",
   },
 ];
 
 const Divisi = () => {
   return (
-    <section id="features" className="mx-auto max-w-screen-2xl py-20">
+    <section id="features" className="mx-auto max-w-screen-2xl py-28">
       <div className="mb-16 text-center">
         <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-4xl font-bold text-transparent">
           Divisi di FOSTI UMS
@@ -68,16 +56,26 @@ const Divisi = () => {
       </div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         {divisi.map((feature, index) => (
-          <Card
+          <AnimatedContent
+            delay={feature.delay}
+            distance={250}
+            direction="vertical"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0}
+            animateOpacity
+            scale={1}
+            threshold={0.2}
             key={index}
-            className="gradient-card border border-border/40 transition-colors hover:border-primary/50"
           >
-            <CardContent className="pt-6">
-              {feature.icon}
-              <h3 className="mb-2 text-xl font-semibold">{feature.title}</h3>
-              <p className="text-muted-foreground">{feature.description}</p>
-            </CardContent>
-          </Card>
+            <Card className="gradient-card h-full border border-border/40 transition-colors hover:border-primary/50">
+              <CardContent className="pt-6">
+                {feature.icon}
+                <h3 className="mb-2 text-xl font-semibold">{feature.title}</h3>
+                <p className="text-muted-foreground">{feature.description}</p>
+              </CardContent>
+            </Card>
+          </AnimatedContent>
         ))}
       </div>
     </section>
