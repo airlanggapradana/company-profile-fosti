@@ -16,6 +16,7 @@ import Image from "next/image";
 import { Card } from "./ui/card";
 import { ShineBorder } from "./magicui/shine-border";
 import { useRouter } from "next/navigation";
+
 const lomba = [
   {
     icon: <Computer className="h-5 w-5 text-primary/50" />,
@@ -69,7 +70,9 @@ function Internal() {
     <TabsContent value="internal" className="mt-0">
       <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
         <div>
-          <h3 className="mb-4 text-2xl font-bold">Startup Solutions</h3>
+          <h3 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-2xl font-bold text-transparent">
+            Musyawarah Kerja (MUSKER)
+          </h3>
           <p className="mb-6 text-muted-foreground">
             Designed specifically for early-stage companies looking to scale
             quickly and efficiently.
@@ -91,7 +94,7 @@ function Internal() {
             Learn More <ChevronRight className="h-4 w-4" />
           </Button>
         </div>
-        <div className="gradient-card rounded-lg border border-border/40 p-6">
+        <div className="gradient-card rounded-lg border border-border/40 p-3">
           <div className="gradient-accent flex aspect-video items-center justify-center rounded-md">
             <Layers className="h-24 w-24 text-muted-foreground/40" />
           </div>

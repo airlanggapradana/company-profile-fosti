@@ -18,7 +18,7 @@ const Navbar = () => {
             className="dark:invert"
           />
         </div>
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-10 tracking-wide md:flex">
           <Link
             href="#divisi"
             className="text-sm font-medium hover:text-primary/80"
