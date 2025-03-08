@@ -16,6 +16,10 @@ const config = {
         hostname: "res.cloudinary.com",
         protocol: "https",
       },
+      {
+        hostname: "fostifest.fostiums.org",
+        protocol: "https",
+      },
     ],
   },
 };
