@@ -5,6 +5,7 @@ import { Card } from "./ui/card";
 import { ShineBorder } from "./magicui/shine-border";
 import Image from "next/image";
 import image from "../../public/image1_blrfxf.webp";
+import { TextAnimate } from "./magicui/text-animate";
 
 const Hero = () => {
   return (
@@ -17,11 +18,16 @@ const Hero = () => {
           <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text py-2 text-center text-4xl font-bold tracking-tight text-transparent md:text-6xl">
             Halo! Selamat Datang di FOSTI UMS
           </h1>
-          <p className="mb-8 max-w-4xl text-center text-lg text-muted-foreground">
+          <TextAnimate
+            animation="slideUp"
+            by="character"
+            once
+            className="mb-8 max-w-4xl text-center text-lg text-muted-foreground"
+          >
             Bergabunglah dengan kami untuk menjadi bagian dari komunitas
             teknologi yang berperan aktif dalam memajukan dunia IT dan
             pengembangan diri!
-          </p>
+          </TextAnimate>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link
               href={"https://oprec-fosti.vercel.app/"}

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ThemeToggle } from "./ThemeToggle";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -18,27 +19,27 @@ const Navbar = () => {
           />
         </div>
         <nav className="hidden items-center gap-6 md:flex">
-          <a
-            href="#features"
+          <Link
+            href="#divisi"
             className="text-sm font-medium hover:text-primary/80"
           >
-            Features
-          </a>
-          <a
-            href="#solutions"
+            Divisi
+          </Link>
+          <Link
+            href="#about"
             className="text-sm font-medium hover:text-primary/80"
           >
-            Solutions
-          </a>
+            About
+          </Link>
           <a href="#team" className="text-sm font-medium hover:text-primary/80">
             Team
           </a>
-          <a
+          <Link
             href="#testimonials"
             className="text-sm font-medium hover:text-primary/80"
           >
             Testimonials
-          </a>
+          </Link>
         </nav>
         <div className="flex items-center gap-4">
           <ThemeToggle />
