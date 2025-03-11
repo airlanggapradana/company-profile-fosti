@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 import Internal from "./Internal";
 import Eksternal from "./Eksternal";
 
 const Proker = () => {
   const [activeTab, setActiveTab] = React.useState("about");
   return (
-    <section id="solutions" className="gradient-bg-secondary py-20">
+    <section id="proker" className="gradient-bg-secondary py-20">
       <div className="mx-auto max-w-screen-2xl">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-3xl font-bold">Program Kerja Kami</h2>
