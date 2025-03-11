@@ -20,6 +20,10 @@ const config = {
         hostname: "fostifest.fostiums.org",
         protocol: "https",
       },
+      {
+        hostname: "imgur.com",
+        protocol: "https",
+      },
     ],
   },
 };
