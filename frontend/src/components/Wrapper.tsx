@@ -4,6 +4,7 @@ import Stats from "./Stats";
 import Divisi from "./Divisi";
 import Proker from "./Proker";
 import About from "./About";
+import Partners from "./Partners";
 
 const Wrapper = () => {
   return (
@@ -13,6 +14,7 @@ const Wrapper = () => {
       <About />
       <Divisi />
       <Proker />
+      <Partners />
     </div>
   );
 };

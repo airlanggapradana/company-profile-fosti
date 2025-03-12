@@ -24,6 +24,14 @@ const config = {
         hostname: "imgur.com",
         protocol: "https",
       },
+      {
+        hostname: "news.ums.ac.id",
+        protocol: "https",
+      },
+      {
+        hostname: "encrypted-tbn0.gstatic.com",
+        protocol: "https",
+      },
     ],
   },
 };
