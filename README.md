@@ -13,3 +13,5 @@ Merupakan website resmi untuk FOSTI UMS.
 
 **Libraries:** RadixUI, ShadcnUI, Tailwind, AntDesign, MagicUI
 
+**Created By RISTEK Web Development Team.**
+
