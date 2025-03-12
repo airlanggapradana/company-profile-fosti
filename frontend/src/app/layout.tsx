@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/utils/theme-provider";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "FOSTI UMS",
@@ -26,6 +27,7 @@ export default function RootLayout({
             <main className="gradient-bg-main min-h-screen">
               <Navbar />
               {children}
+              <Footer />
             </main>
           </AntdRegistry>
         </ThemeProvider>
