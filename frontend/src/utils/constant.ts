@@ -95,6 +95,12 @@ const carouselAbout = [
     width: 1920,
     height: 1080,
   },
+  {
+    src: "https://res.cloudinary.com/dsuyzv7br/image/upload/f_auto,q_35/v1724804646/image3_rqn1no.jpg",
+    alt: "web3",
+    width: 1920,
+    height: 1080,
+  },
 ];
 
 export default { musker, tot, carouselAbout };

@@ -3,13 +3,15 @@ import { Marquee } from "./magicui/marquee";
 import Image, { StaticImageData } from "next/image";
 import { Card } from "./ui/card";
 import img from "@/utils/constant";
+import HeroVideoDialog from "./magicui/hero-video-dialog";
+import thumbnail from "../../public/image1_blrfxf.webp";
 
 const About = () => {
   const about = img.carouselAbout;
   return (
     <>
       <section id="about" className="mx-auto max-w-screen-2xl py-28">
-        <div className="text-center">
+        <div className="mb-12 text-center">
           <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-4xl font-bold text-transparent">
             Tentang Kami
           </h1>
@@ -22,6 +24,22 @@ const About = () => {
             menyebarluaskan Open Source, serta berkontribusi dalam pengembangan
             diri di bidang teknologi.
           </p>
+        </div>
+        <div className="relative mx-auto w-[70rem]">
+          <HeroVideoDialog
+            className="block dark:hidden"
+            animationStyle="from-center"
+            videoSrc="https://www.youtube.com/embed/Mh4lx5Yl3bs?si=R9kkAxdM1imp-1Ld"
+            thumbnailSrc={thumbnail.src}
+            thumbnailAlt="Hero Video"
+          />
+          <HeroVideoDialog
+            className="hidden dark:block"
+            animationStyle="from-center"
+            videoSrc="https://www.youtube.com/embed/Mh4lx5Yl3bs?si=R9kkAxdM1imp-1Ld"
+            thumbnailSrc={thumbnail.src}
+            thumbnailAlt="Hero Video"
+          />
         </div>
       </section>
       <div className="flex w-full flex-col items-center justify-center overflow-hidden">
