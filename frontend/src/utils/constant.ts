@@ -2,10 +2,10 @@ import musker1 from "../../public/DSC03108.webp";
 import musker2 from "../../public/DSC03124.webp";
 import musker3 from "../../public/DSC03129.webp";
 import musker4 from "../../public/DSC07069.webp";
-import tot1 from "../../public/IMG20250308093854.webp";
+import tot1 from "../../public/20250308_085217.webp";
 import tot2 from "../../public/IMG20250308094134.webp";
 import tot3 from "../../public/IMG20250308113416.webp";
-import tot4 from "../../public/IMG20250308124555.webp";
+import tot4 from "../../public/20250308_124553.webp";
 import about1 from "../../public/image1_blrfxf.webp";
 
 const musker = [
