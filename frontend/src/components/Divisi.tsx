@@ -30,16 +30,16 @@ const divisi = [
 
 const Divisi = () => {
   return (
-    <section id="divisi" className="mx-auto max-w-screen-2xl py-28">
+    <section id="divisi" className="mx-auto max-w-screen-2xl px-5 py-28">
       <div className="mb-16 text-center">
-        <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-4xl font-bold text-transparent">
+        <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">
           Divisi di FOSTI UMS
         </h1>
         <TextAnimate
           animation="slideUp"
           by="word"
           once
-          className="mx-auto max-w-2xl text-muted-foreground"
+          className="mx-auto max-w-2xl text-sm text-muted-foreground md:text-lg"
         >
           Kami memiliki 3 divisi aktif yang masing-masing memiliki peran dan
           tanggung jawabnya sendiri.

@@ -13,16 +13,16 @@ const Hero = () => {
       className="mx-auto min-h-screen max-w-screen-2xl py-20 md:py-28"
       id="home"
     >
-      <div className="flex flex-col items-center justify-center gap-8">
+      <div className="flex flex-col items-center justify-center gap-8 px-5 md:px-0">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text py-2 text-center text-4xl font-bold tracking-tight text-transparent md:text-6xl">
+          <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text py-2 text-center text-3xl font-bold tracking-tight text-transparent md:text-6xl">
             Halo! Selamat Datang di FOSTI UMS
           </h1>
           <TextAnimate
             animation="slideUp"
             by="character"
             once
-            className="mb-8 max-w-4xl text-center text-lg text-muted-foreground"
+            className="mb-8 max-w-4xl text-center text-sm text-muted-foreground md:text-lg"
           >
             Bergabunglah dengan kami untuk menjadi bagian dari komunitas
             teknologi yang berperan aktif dalam memajukan dunia IT dan

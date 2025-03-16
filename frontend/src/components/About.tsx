@@ -9,13 +9,13 @@ import thumbnail from "../../public/image1_blrfxf.webp";
 const About = () => {
   const about = img.carouselAbout;
   return (
-    <>
-      <section id="about" className="mx-auto max-w-screen-2xl py-28">
+    <div>
+      <section id="about" className="mx-auto max-w-screen-2xl px-5 py-28">
         <div className="mb-12 text-center">
-          <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-4xl font-bold text-transparent">
+          <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">
             Tentang Kami
           </h1>
-          <p className="mx-auto max-w-6xl leading-relaxed text-muted-foreground">
+          <p className="mx-auto max-w-6xl text-sm leading-relaxed text-muted-foreground md:text-lg">
             Tidak banyak organisasi yang mampu menyediakan wadah bagi
             pengembangan teknologi yang komprehensif. FOSTI (Forum Open Source
             Teknik Informatika) UMS hadir sebagai Unit Kegiatan Mahasiswa yang
@@ -25,7 +25,7 @@ const About = () => {
             diri di bidang teknologi.
           </p>
         </div>
-        <div className="relative mx-auto w-[70rem]">
+        <div className="relative mx-auto w-full">
           <HeroVideoDialog
             className="block dark:hidden"
             animationStyle="from-center"
@@ -66,7 +66,7 @@ const About = () => {
           ))}
         </Marquee>
       </div>
-    </>
+    </div>
   );
 };
 

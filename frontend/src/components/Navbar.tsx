@@ -10,7 +10,7 @@ const Navbar = () => {
   const { theme } = useTheme();
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/5 py-3 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between">
+      <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between px-5">
         <div className="flex items-center gap-2">
           <Image
             src={

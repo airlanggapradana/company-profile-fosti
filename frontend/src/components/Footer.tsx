@@ -10,10 +10,10 @@ import { useTheme } from "next-themes";
 const Footer = () => {
   const { theme } = useTheme();
   return (
-    <footer className="border-t bg-background py-12">
-      <div className="mx-auto max-w-screen-2xl px-4 py-12 md:px-6">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div className="md:col-span-1">
+    <footer className="border-t bg-background py-8 md:py-12">
+      <div className="mx-auto max-w-screen-2xl px-4 py-8 md:px-6 md:py-12">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+          <div className="flex flex-col items-center md:col-span-1 md:items-start">
             <Link href="#" className="flex items-center space-x-2">
               <Image
                 src={
@@ -22,21 +22,22 @@ const Footer = () => {
                     : "https://blog.fostiums.org/wp-content/uploads/2021/04/logo.png"
                 }
                 alt="Logo"
-                width={200}
-                height={200}
+                width={160}
+                height={160}
+                className="h-auto w-auto max-w-[160px] md:max-w-[200px]"
               />
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground">
+            <p className="mt-4 text-center text-sm text-muted-foreground md:text-left">
               Created by RISTEK Web Development Team.
             </p>
           </div>
         </div>
-        <Separator className="my-8" />
-        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="text-xs text-muted-foreground">
+        <Separator className="my-6 md:my-8" />
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+          <p className="text-center text-xs text-muted-foreground md:text-left">
             © {new Date().getFullYear()} FOSTI UMS, Org. All rights reserved.
           </p>
-          <div className="flex items-center space-x-4">
+          <div className="mt-4 flex items-center space-x-4 md:mt-0">
             <Link
               href="https://github.com/FOSTI-UMS"
               className="text-muted-foreground transition-colors hover:text-foreground"
