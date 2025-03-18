@@ -36,7 +36,7 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry && entry.isIntersecting) {
+        if (entry?.isIntersecting) {
           observer.unobserve(element);
           setTimeout(() => {
             setInView(true);
