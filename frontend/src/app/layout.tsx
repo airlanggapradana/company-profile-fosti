@@ -22,7 +22,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
-        <ThemeProvider attribute={"class"} defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute={"class"} defaultTheme="light">
           <AntdRegistry>
             <main className="gradient-bg-main min-h-screen">
               <Navbar />
