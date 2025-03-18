@@ -35,11 +35,11 @@ const Eksternal = () => {
           <p className="mb-6 leading-relaxed text-muted-foreground">
             FOSTIFEST adalah kegiatan tahunan yang diselenggarakan oleh Forum
             Open Source Teknik Informatika (FOSTI) UMS. FOSTIFEST{" "}
-            {new Date().getFullYear()} mengusung tema "Designing the Future:
-            Creative Tech for The Digital Age". Acara ini mencakup workshop
-            tentang pembuatan aplikasi chat dengan Vue.js, serta Lomba pada
-            kategori Competitive Programming, Software Development dan UI/UX
-            Design. FOSTIFEST bertujuan meningkatkan keterampilan teknis,
+            {new Date().getFullYear()} mengusung tema &quot;Designing the
+            Future: Creative Tech for The Digital Age&quot;. Acara ini mencakup
+            workshop tentang pembuatan aplikasi chat dengan Vue.js, serta Lomba
+            pada kategori Competitive Programming, Software Development dan
+            UI/UX Design. FOSTIFEST bertujuan meningkatkan keterampilan teknis,
             mendorong kreativitas, dan memperluas peluang karir di teknologi
             digital.
           </p>
