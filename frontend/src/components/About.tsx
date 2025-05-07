@@ -12,17 +12,14 @@ const About = () => {
     <div>
       <section id="about" className="mx-auto max-w-screen-2xl px-5 py-28">
         <div className="mb-12 text-center">
-          <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">
-            Tentang Kami
+          <h1 className="mb-4 bg-gradient-to-br from-red-500 to-orange-400 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">
+            About Us
           </h1>
-          <p className="mx-auto max-w-6xl text-sm leading-relaxed text-muted-foreground md:text-lg">
-            Tidak banyak organisasi yang mampu menyediakan wadah bagi
-            pengembangan teknologi yang komprehensif. FOSTI (Forum Open Source
-            Teknik Informatika) UMS hadir sebagai Unit Kegiatan Mahasiswa yang
-            berada di bawah naungan Fakultas Komunikasi dan Informatika UMS,
-            menjadi tempat bagi mahasiswa untuk mendalami, memperluas, dan
-            menyebarluaskan Open Source, serta berkontribusi dalam pengembangan
-            diri di bidang teknologi.
+          <p className="mx-auto max-w-4xl text-sm font-medium leading-relaxed text-muted-foreground md:text-lg">
+            FOSTI is an independent non-profit organization operated by the
+            students of the Faculty of Communication and Informatics Universitas
+            Muhammadiyah Surakarta that aims to cultivate students' interests in
+            the fields of science and technology.
           </p>
         </div>
         <div className="relative mx-auto w-full">

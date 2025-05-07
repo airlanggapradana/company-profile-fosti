@@ -13,7 +13,7 @@ const Wrapper = () => {
       <Stats />
       <About />
       <Divisi />
-      <Proker />
+      {/* <Proker /> */}
       <Partners />
     </div>
   );

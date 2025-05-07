@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/utils/theme-provider";
-import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Footer from "@/components/Footer";
@@ -16,11 +15,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`${GeistSans.variable} scroll-smooth`}
-      suppressHydrationWarning
-    >
+    <html lang="en" className={`scroll-smooth`} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute={"class"} defaultTheme="light">
           <AntdRegistry>

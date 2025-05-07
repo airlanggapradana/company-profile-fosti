@@ -32,6 +32,18 @@ const config = {
         hostname: "encrypted-tbn0.gstatic.com",
         protocol: "https",
       },
+      {
+        hostname: "images.pexels.com",
+        protocol: "https",
+      },
+      {
+        hostname: "i.postimg.cc",
+        protocol: "https",
+      },
+      {
+        hostname: "placehold.co",
+        protocol: "https",
+      },
     ],
   },
 };

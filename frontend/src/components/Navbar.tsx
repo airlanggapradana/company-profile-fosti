@@ -9,43 +9,43 @@ import { useTheme } from "next-themes";
 const Navbar = () => {
   const { theme } = useTheme();
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/5 py-3 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between px-5">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background py-3 backdrop-blur-xl">
+      <div className="mx-auto flex h-12 max-w-screen-2xl items-center justify-between px-5">
         <div className="flex items-center gap-2">
-          <Image
-            src={
-              theme === "dark"
-                ? logoDark
-                : "https://blog.fostiums.org/wp-content/uploads/2021/04/logo.png"
-            }
-            alt="Logo"
-            width={70}
-            height={70}
-          />
+          <Link href={"/"}>
+            <Image
+              src={
+                theme === "dark"
+                  ? logoDark
+                  : "https://blog.fostiums.org/wp-content/uploads/2021/04/logo.png"
+              }
+              alt="Logo"
+              width={70}
+              height={70}
+            />
+          </Link>
         </div>
-        <nav className="hidden items-center gap-10 tracking-wide md:flex">
+        <nav className="hidden items-center gap-12 md:flex">
           <Link
             href="#divisi"
-            className="text-sm font-medium hover:text-primary/80"
+            className="text-sm font-semibold hover:text-primary/80"
           >
-            Divisi
+            Our Divisions
           </Link>
           <Link
             href="#about"
-            className="text-sm font-medium hover:text-primary/80"
+            className="text-sm font-semibold hover:text-primary/80"
           >
-            About
+            About Us
           </Link>
           <a
             href="#proker"
-            className="text-sm font-medium hover:text-primary/80"
+            className="text-sm font-semibold hover:text-primary/80"
           >
-            Proker
+            Our Programs
           </a>
         </nav>
-        <div className="flex items-center gap-4">
-          <ThemeToggle />
-        </div>
+        <ThemeToggle />
       </div>
     </header>
   );

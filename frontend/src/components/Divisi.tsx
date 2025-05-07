@@ -3,28 +3,32 @@ import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { TextAnimate } from "./magicui/text-animate";
 import AnimatedContent from "./AnimatedContent/AnimatedContent";
+import Link from "next/link";
 
 const divisi = [
   {
     icon: <Users className="mb-4 h-10 w-10 text-primary" />,
-    title: "Keorganisasian",
+    title: "Organizational",
     delay: 100,
+    href: "/divisi/keor",
     description:
-      "Divisi yang menjalin hubungan antar anggota dan mempersiapkan calon anggota baru FOSTI UMS.",
+      "Fosters relationships among members and prepares new prospective members of FOSTI UMS.",
   },
   {
     icon: <MonitorCog className="mb-4 h-10 w-10 text-primary" />,
-    title: "Riset dan Teknologi",
+    title: "Research and Technology",
     delay: 250,
+    href: "/divisi/ristek",
     description:
-      "Divisi yang melakukan penelitian dan pengembangan teknologi open source untuk FOSTI dan masyarakat.",
+      "Conducts research and development of open-source technology for FOSTI and the community.",
   },
   {
     icon: <ChartNoAxesCombinedIcon className="mb-4 h-10 w-10 text-primary" />,
-    title: "Hubungan Publik",
+    title: "Public Relations",
     delay: 350,
+    href: "/divisi/hubpub",
     description:
-      "Divisi yang menjalin hubungan dan kerja sama dengan berbagai pihak untuk memperluas jaringan FOSTI UMS.",
+      "Builds relationships and collaborations with various parties to expand FOSTI UMS's network.",
   },
 ];
 
@@ -32,17 +36,16 @@ const Divisi = () => {
   return (
     <section id="divisi" className="mx-auto max-w-screen-2xl px-5 py-28">
       <div className="mb-16 text-center">
-        <h1 className="mb-4 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">
-          Divisi di FOSTI UMS
+        <h1 className="mb-4 bg-gradient-to-br from-red-500 to-orange-400 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">
+          Divisions
         </h1>
         <TextAnimate
           animation="slideUp"
           by="word"
           once
-          className="mx-auto max-w-2xl text-sm text-muted-foreground md:text-lg"
+          className="mx-auto max-w-2xl text-base font-medium text-muted-foreground md:text-lg"
         >
-          Kami memiliki 3 divisi aktif yang masing-masing memiliki peran dan
-          tanggung jawabnya sendiri.
+          Our members are a part of diverse divisions that work together as one.
         </TextAnimate>
       </div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -59,13 +62,19 @@ const Divisi = () => {
             threshold={0.2}
             key={index}
           >
-            <Card className="gradient-card h-full border border-border/40 transition-colors hover:border-primary/50">
-              <CardContent className="pt-6">
-                {feature.icon}
-                <h3 className="mb-2 text-xl font-semibold">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
-              </CardContent>
-            </Card>
+            <Link key={index} href={feature.href}>
+              <Card className="gradient-card h-full border-2 border-border/40 transition-colors hover:border-red-500">
+                <CardContent className="pt-6">
+                  {feature.icon}
+                  <h1 className="mb-2 text-xl font-semibold text-red-500">
+                    {feature.title}
+                  </h1>
+                  <p className="font-medium text-muted-foreground">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
           </AnimatedContent>
         ))}
       </div>

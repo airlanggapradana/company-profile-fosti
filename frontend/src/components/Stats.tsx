@@ -4,15 +4,15 @@ import { NumberTicker } from "./magicui/number-ticker";
 const stats = [
   {
     title: "10",
-    description: "Program Kerja",
+    description: "Work Programs",
   },
   {
     title: "100",
-    description: "Anggota",
+    description: "Members",
   },
   {
     title: "3",
-    description: "Divisi Aktif",
+    description: "Active Divisions",
   },
 ];
 
@@ -30,7 +30,9 @@ const Stats = () => {
                 />
                 <p className="text-2xl font-bold">+</p>
               </div>
-              <p className="text-muted-foreground">{stat.description}</p>
+              <p className="font-semibold text-muted-foreground">
+                {stat.description}
+              </p>
             </div>
           ))}
         </div>

@@ -8,12 +8,12 @@ const Partners = () => {
       className="mx-auto max-w-screen-2xl px-5 py-14 md:py-20 lg:py-28"
     >
       <div className="mb-5 text-center md:mb-7">
-        <h1 className="mb-2 bg-gradient-to-br from-indigo-500 to-cyan-300 bg-clip-text text-2xl font-bold text-transparent md:mb-4 md:text-3xl lg:text-4xl">
+        <h1 className="mb-2 bg-gradient-to-br from-red-500 to-orange-400 bg-clip-text text-2xl font-bold text-transparent md:mb-4 md:text-3xl lg:text-4xl">
           Supported by
         </h1>
-        <p className="px-2 text-sm text-muted-foreground md:text-base">
-          Kami mendapat dukungan penuh dari berbagai pihak dalam menjalankan
-          program kerja kami.
+        <p className="px-2 text-sm font-medium text-muted-foreground md:text-base">
+          We receive full support from various parties in carrying out our work
+          programs.
         </p>
       </div>
 
