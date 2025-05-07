@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Linkedin } from "lucide-react";
 import { Button } from "../ui/button";
 import AnimatedContent from "../AnimatedContent/AnimatedContent";
+import { ShineBorder } from "../magicui/shine-border";
 
 const RistekTeam = () => {
   return (
@@ -33,8 +34,17 @@ const RistekTeam = () => {
           >
             <Card
               key={index}
-              className="flex flex-col items-center gap-3 rounded-lg border p-4 shadow-md"
+              className="relative flex flex-col items-center gap-3 overflow-hidden rounded-lg border p-4 shadow-md"
             >
+              <ShineBorder
+                duration={(index += 15)}
+                shineColor={[
+                  "oklch(63.7% 0.237 25.331)",
+                  "oklch(75% 0.183 55.934)",
+                  "oklch(87.9% 0.169 91.605)",
+                ]}
+                borderWidth={1.5}
+              />
               <CardContent className="flex flex-col items-center gap-2">
                 <div className="relative h-24 w-24">
                   <Image
