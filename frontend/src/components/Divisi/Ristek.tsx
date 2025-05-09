@@ -6,6 +6,7 @@ import RistekTeam from "./RistekTeam";
 import { Button } from "../ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
+import RistekAbout from "./RistekAbout";
 
 const Ristek = () => {
   const [activeTab, setActiveTab] = React.useState("about");
@@ -41,17 +42,7 @@ const Ristek = () => {
           </div>
 
           {/* About */}
-          <TabsContent className="flex flex-col gap-5" value="about">
-            <h3 className="max-w-2xl text-xl font-bold tracking-tight text-red-500 md:text-3xl">
-              About
-            </h3>
-            <p className="max-w-4xl text-base font-semibold text-muted-foreground">
-              The Research and Technology division focuses on exploring and
-              developing innovative open-source technologies. It aims to empower
-              FOSTI and the community through cutting-edge research and
-              practical solutions.
-            </p>
-          </TabsContent>
+          <RistekAbout />
 
           {/* Programs */}
           <RistekPrograms />
