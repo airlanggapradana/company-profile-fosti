@@ -12,6 +12,6 @@ export interface Achievement {
   organization: string;
   year: string;
   category: Exclude<AchievementCategory, "All">;
-  image: string;
-  color: string;
+  image?: string;
+  color?: string;
 }

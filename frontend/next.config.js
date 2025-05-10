@@ -44,6 +44,22 @@ const config = {
         hostname: "placehold.co",
         protocol: "https",
       },
+      {
+        hostname: "storage.googleapis.com",
+        protocol: "https",
+      },
+      {
+        hostname: "www.wiipa.org.tw",
+        protocol: "https",
+      },
+      {
+        hostname: "www.mte.org.my",
+        protocol: "https",
+      },
+      {
+        hostname: "gemastik.kemdikbud.go.id",
+        protocol: "https",
+      },
     ],
   },
 };

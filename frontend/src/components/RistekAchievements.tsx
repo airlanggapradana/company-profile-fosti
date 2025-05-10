@@ -4,7 +4,14 @@ import { Achievement, AchievementCategory } from "@/types/achievements";
 import React, { useEffect, useState } from "react";
 import CategoryFilter from "./CategoryFilter";
 import { Trophy } from "lucide-react";
-import { Card, CardContent } from "./ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
 import Image from "next/image";
 import AchievementsGrid from "./AchievementsGrid";
 
@@ -77,13 +84,13 @@ export const AchievementCardRistek: React.FC<AchievementCardProps> = ({
         return "text-rose-500";
       case "3rd":
         return "text-amber-600";
-      case "champion":
+      case "gold":
         return "text-fuchsia-500";
-      case "finalist":
+      case "silver":
         return "text-blue-500";
-      case "semifinalist":
+      case "finalist":
         return "text-emerald-500";
-      case "honorable mention":
+      case "top 100":
         return "text-purple-500";
       default:
         return "text-orange-500";
@@ -91,39 +98,24 @@ export const AchievementCardRistek: React.FC<AchievementCardProps> = ({
   };
 
   return (
-    <Card className="rounded-xl">
-      <div className="relative h-36 overflow-hidden">
-        <Image
-          src={achievement.image}
-          alt={`${achievement.organization} achievement`}
-          priority
-          fill
-          className="h-full w-full rounded-t-xl object-cover"
-        />
-      </div>
-      <CardContent className="p-4">
-        <div className="flex flex-col gap-1">
-          <div className="flex items-baseline gap-1">
-            <span
-              className={`text-lg font-bold ${getRankColor(achievement.rank)}`}
-            >
-              {achievement.rank}
-            </span>
-            <span className="font-medium text-gray-700 dark:text-white">
-              {achievement.rank.toLowerCase() !== "honorable mention"
-                ? "place of"
-                : ""}
-            </span>
-          </div>
-          <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-            {achievement.title || achievement.organization}
-          </h3>
-          <div className="mt-2 text-sm font-medium text-gray-600 dark:text-muted-foreground">
-            <p>{achievement.organization}</p>
-            <p className="text-sm">{achievement.year}</p>
-          </div>
-        </div>
-      </CardContent>
+    <Card className="flex h-full flex-col rounded-xl">
+      <CardHeader>
+        <CardDescription
+          className={`text-lg font-bold ${getRankColor(achievement.rank)}`}
+        >
+          {achievement.rank}
+          <span className="ml-1 font-medium text-gray-700 dark:text-white">
+            {achievement.rank.toLowerCase() !== "honorable mention"
+              ? "place of"
+              : ""}
+          </span>
+        </CardDescription>
+        <CardTitle className="leading-normal">{achievement.title}</CardTitle>
+      </CardHeader>
+      <CardFooter className="flex flex-col items-start gap-2 text-sm font-semibold text-muted-foreground dark:text-muted-foreground">
+        <p>{achievement.organization}</p>
+        <p className="text-sm">{achievement.year}</p>
+      </CardFooter>
     </Card>
   );
 };
