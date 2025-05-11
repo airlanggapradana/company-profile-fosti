@@ -3,10 +3,10 @@ import { TabsContent } from "../ui/tabs";
 import { Card, CardContent, CardFooter } from "../ui/card";
 import { ristekTeam } from "@/data/RistekTeam";
 import Image from "next/image";
-import { Linkedin } from "lucide-react";
-import { Button } from "../ui/button";
 import AnimatedContent from "../AnimatedContent/AnimatedContent";
 import { ShineBorder } from "../magicui/shine-border";
+import { AiFillLinkedin } from "react-icons/ai";
+import Link from "next/link";
 
 const RistekTeam = () => {
   return (
@@ -62,9 +62,13 @@ const RistekTeam = () => {
                 <p className="text-center text-sm font-medium text-muted-foreground">
                   {member.role}
                 </p>
-                <Button variant={"ghost"} size={"icon"}>
-                  <Linkedin className="mr-2 h-4 w-4" />
-                </Button>
+                <Link
+                  href={"https://www.linkedin.com/in/" + member.name}
+                  className="mt-3"
+                  target="_blank"
+                >
+                  <AiFillLinkedin className="h-5 w-5" />
+                </Link>
               </CardContent>
             </Card>
           </AnimatedContent>

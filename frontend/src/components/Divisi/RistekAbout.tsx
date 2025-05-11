@@ -8,11 +8,11 @@ import AchievementCard from "../AchievementCard";
 import RistekAchievements from "../RistekAchievements";
 
 const achievements = [
-  { count: "100+", label: "All Achievement" },
-  { count: "30+", label: "Project Achievement" },
-  { count: "70+", label: "Competition Achievement" },
-  { count: "3", label: "Research Achievement" },
-  { count: "5", label: "Program Achievement" },
+  { count: "10+", label: "All Achievement" },
+  // { count: "30+", label: "Project Achievement" },
+  { count: "10", label: "Competition Achievement" },
+  { count: "1", label: "Research Achievement" },
+  // { count: "5", label: "Program Achievement" },
 ];
 
 const RistekAbout = () => {
@@ -96,7 +96,7 @@ const RistekAbout = () => {
               </h2>
             </motion.div>
 
-            <div className="grid grid-cols-2 gap-4 md:gap-6 lg:grid-cols-5">
+            <div className="grid grid-cols-2 gap-4 md:gap-6 lg:grid-cols-3">
               {achievements.map((achievement, index) => (
                 <AchievementCard
                   key={index}

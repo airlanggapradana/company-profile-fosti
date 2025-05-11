@@ -6,6 +6,7 @@ import { Github, Instagram, Youtube } from "lucide-react";
 import logoputih from "../../public/LOGO FOSTI PUTIH.png";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const { theme } = useTheme();
@@ -62,6 +63,13 @@ const Footer = () => {
             >
               <Youtube className="h-5 w-5" aria-hidden="true" />
               <span className="sr-only">Youtube</span>
+            </Link>
+            <Link
+              href="https://wa.me/62816331463"
+              className="text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <FaWhatsapp className="h-5 w-5" aria-hidden="true" />
+              <span className="sr-only">Whatsapp</span>
             </Link>
           </div>
         </div>

@@ -101,7 +101,7 @@ export const AchievementCardRistek: React.FC<AchievementCardProps> = ({
     <Card className="flex h-full flex-col rounded-xl">
       <CardHeader>
         <CardDescription
-          className={`text-lg font-bold ${getRankColor(achievement.rank)}`}
+          className={`text-sm font-bold ${getRankColor(achievement.rank)}`}
         >
           {achievement.rank}
           <span className="ml-1 font-medium text-gray-700 dark:text-white">
@@ -110,7 +110,9 @@ export const AchievementCardRistek: React.FC<AchievementCardProps> = ({
               : ""}
           </span>
         </CardDescription>
-        <CardTitle className="leading-normal">{achievement.title}</CardTitle>
+        <CardTitle className="text-xl leading-normal">
+          {achievement.title}
+        </CardTitle>
       </CardHeader>
       <CardFooter className="flex flex-col items-start gap-2 text-sm font-semibold text-muted-foreground dark:text-muted-foreground">
         <p>{achievement.organization}</p>

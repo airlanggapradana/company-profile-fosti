@@ -11,7 +11,7 @@ const Partners = () => {
         <h1 className="mb-2 bg-gradient-to-br from-red-500 to-orange-400 bg-clip-text text-2xl font-bold text-transparent md:mb-4 md:text-3xl lg:text-4xl">
           Supported by
         </h1>
-        <p className="px-2 text-sm font-medium text-muted-foreground md:text-base">
+        <p className="px-2 text-sm font-semibold text-muted-foreground md:text-base">
           We receive full support from various parties in carrying out our work
           programs.
         </p>

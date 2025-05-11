@@ -7,6 +7,10 @@ import tot2 from "../../public/IMG20250308094134.webp";
 import tot3 from "../../public/IMG20250308113416.webp";
 import tot4 from "../../public/20250308_124553.webp";
 import about1 from "../../public/image1_blrfxf.webp";
+import about2 from "../../public/DSC00076.webp";
+import about3 from "../../public/IMG_6051.webp";
+import about4 from "../../public/IMG_5225.webp";
+import about5 from "../../public/IMG_5863.webp";
 
 const musker = [
   {
@@ -50,6 +54,30 @@ const carouselAbout = [
   {
     src: about1,
     alt: "about1",
+    width: 1920,
+    height: 1080,
+  },
+  {
+    src: about2,
+    alt: "about2",
+    width: 1920,
+    height: 1080,
+  },
+  {
+    src: about3,
+    alt: "about3",
+    width: 1920,
+    height: 1080,
+  },
+  {
+    src: about4,
+    alt: "about4",
+    width: 1920,
+    height: 1080,
+  },
+  {
+    src: about5,
+    alt: "about5",
     width: 1920,
     height: 1080,
   },
