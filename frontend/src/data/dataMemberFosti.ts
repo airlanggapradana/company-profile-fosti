@@ -5,7 +5,7 @@ export const dataFostiAllMembers: TeamType[] = [
     name: "Suryani Elmaghfiroh",
     alt: "Suryani Elmaghfiroh",
     role: "BPHI",
-    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1icGSbgyzgp3AZHNF1DgIkEteeyeI3Wej",
+    src: "https://i.postimg.cc/SKnDtbpG/Elma-fosti-SURYANI-ELMAGHFIROH.webp",
     linkedin: "https://www.linkedin.com/in/suryani-elmaghfiroh/",
   },
   {
