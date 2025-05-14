@@ -10,15 +10,15 @@ import Link from "next/link";
 
 const RistekTeam = () => {
   return (
-    <TabsContent className="flex flex-col gap-5" value="team">
-      <h3 className="max-w-2xl text-xl font-bold tracking-tight text-red-500 md:text-3xl">
+    <TabsContent className="flex flex-col gap-4 sm:gap-5 md:gap-6" value="team">
+      <h3 className="max-w-2xl text-center text-lg font-bold tracking-tight text-red-500 sm:text-xl md:text-start md:text-3xl">
         Meet The Team
       </h3>
-      <p className="max-w-4xl text-base font-semibold text-muted-foreground">
+      <p className="max-w-4xl text-center text-sm font-semibold text-muted-foreground sm:text-base md:text-start">
         Get to know the brilliant minds behind the Research and Technology
         division.
       </p>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="xs:gap-4 mt-5 grid grid-cols-2 gap-3 sm:gap-5 md:mt-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
         {ristekTeam.map((member, index) => (
           <AnimatedContent
             delay={index * 100}
@@ -34,7 +34,7 @@ const RistekTeam = () => {
           >
             <Card
               key={index}
-              className="relative flex flex-col items-center gap-3 overflow-hidden rounded-lg border p-4 shadow-md"
+              className="xs:gap-2 xs:p-3 relative flex h-full flex-col items-center gap-1.5 overflow-hidden rounded-lg border p-2 shadow-md transition-shadow hover:shadow-lg sm:gap-3 sm:p-4"
             >
               <ShineBorder
                 duration={(index += 15)}
@@ -45,8 +45,8 @@ const RistekTeam = () => {
                 ]}
                 borderWidth={1.5}
               />
-              <CardContent className="flex flex-col items-center gap-2">
-                <div className="relative h-24 w-24">
+              <CardContent className="xs:gap-2 flex flex-col items-center gap-1.5 p-0">
+                <div className="xs:h-20 xs:w-20 relative h-16 w-16 sm:h-24 sm:w-24">
                   <Image
                     unoptimized
                     src={member.src}
@@ -56,18 +56,18 @@ const RistekTeam = () => {
                     className="rounded-full"
                   />
                 </div>
-                <h4 className="text-center text-base font-bold text-red-500">
+                <h4 className="text-center text-xs font-bold text-red-500 sm:text-base">
                   {member.name}
                 </h4>
-                <p className="text-center text-sm font-medium text-muted-foreground">
+                <p className="text-center text-xs font-medium text-muted-foreground sm:text-sm">
                   {member.role}
                 </p>
                 <Link
                   href={"https://www.linkedin.com/in/" + member.name}
-                  className="mt-3"
+                  className="xs:mt-2 mt-1 transition-colors hover:text-blue-600 sm:mt-3"
                   target="_blank"
                 >
-                  <AiFillLinkedin className="h-5 w-5" />
+                  <AiFillLinkedin className="h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </CardContent>
             </Card>

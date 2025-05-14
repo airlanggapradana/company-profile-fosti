@@ -12,7 +12,7 @@ const Keor = () => {
   const router = useRouter();
   return (
     <div className="flex flex-col items-start gap-7">
-      <Button variant={"ghost"} size={"icon"} onClick={() => router.back()}>
+      <Button variant={"ghost"} size={"icon"} onClick={() => router.push("/")}>
         <ArrowLeft />
       </Button>
       <div className="space-y-4">

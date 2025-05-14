@@ -6,10 +6,10 @@ import Image from "next/image";
 const RistekPrograms = () => {
   return (
     <TabsContent className="flex flex-col gap-5" value="programs">
-      <h3 className="max-w-2xl text-xl font-bold tracking-tight text-red-500 md:text-3xl">
+      <h3 className="max-w-2xl text-center text-xl font-bold tracking-tight text-red-500 md:text-start md:text-3xl">
         Programs
       </h3>
-      <p className="max-w-4xl text-base font-semibold text-muted-foreground">
+      <p className="max-w-4xl text-center text-base font-semibold text-muted-foreground md:text-start">
         Explore the various programs and initiatives led by the Research and
         Technology division. These programs aim to foster innovation,
         collaboration, and skill development within the community.

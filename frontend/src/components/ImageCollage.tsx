@@ -19,7 +19,7 @@ const ImageCollage: React.FC = () => {
         </div>
 
         {/* Two small images on the right */}
-        <div className="col-span-6 md:col-span-6">
+        <div className="col-span-12 md:col-span-6">
           <ImageCard image={images[2]!} className="h-full" />
         </div>
         {/* <div className="col-span-6 md:col-span-3">

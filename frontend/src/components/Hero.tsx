@@ -16,10 +16,10 @@ const Hero = () => {
       id="home"
     >
       <div className="flex flex-col items-center justify-center gap-12 px-5 md:flex-row md:px-0">
-        <div className="flex flex-col items-start justify-center md:w-1/2">
-          <h1 className="mb-5 max-w-xl text-start text-3xl font-bold tracking-tighter md:text-6xl">
+        <div className="flex w-full flex-col items-start justify-center md:w-1/2 lg:px-8">
+          <h1 className="mb-5 w-full text-start text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
             We Help You <span className="text-red-500">Boost</span> {""}
-            <div className="mt-3 flex items-center gap-3">
+            <div className="mt-3 flex flex-wrap items-center gap-3">
               <span>Your</span>
               <RotatingText
                 texts={["Creativity", "Growth", "Network", "Skills"]}
@@ -40,7 +40,7 @@ const Hero = () => {
             by="word"
             delay={2000}
             once
-            className="mb-8 max-w-2xl text-start text-sm font-semibold text-muted-foreground md:text-lg"
+            className="mb-8 w-full text-start text-sm font-semibold text-muted-foreground sm:text-base md:text-lg"
           >
             Since 2008, FOSTI has been nurturing student's passion for science
             and technology, proudly standing as one of the best IT student

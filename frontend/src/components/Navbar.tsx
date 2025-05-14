@@ -19,6 +19,28 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
+
+const divisions = [
+  {
+    name: "Research and Technology",
+    link: "/divisi/ristek",
+    desc: "Conducts research and development of open-source technology for FOSTI and the community.",
+    icon: <FaCubes />,
+  },
+  {
+    name: "Public Relations",
+    link: "/divisi/hubpub",
+    desc: "Manages FOSTI's public image and communication with external parties.",
+    icon: <FaCubes />,
+  },
+  {
+    name: "Organizational",
+    link: "/divisi/keor",
+    desc: "Focuses on internal management and development of FOSTI's organizational structure.",
+    icon: <FaCubes />,
+  },
+];
 
 const Navbar = () => {
   const { theme } = useTheme();
@@ -39,24 +61,28 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <NavigationMenu className="hidden items-center gap-10 md:flex">
+        <NavigationMenu className="hidden items-center gap-5 md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link
-                legacyBehavior
-                passHref
-                className="flex items-center gap-1 rounded-lg p-2 transition-colors duration-200 hover:bg-muted-foreground/10"
-                href="#divisi"
-              >
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} flex items-center gap-1`}
-                >
-                  <FaCubes />
-                  <span className="text-sm font-semibold hover:text-primary/80">
-                    Our Divisions
-                  </span>
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuTrigger className="flex items-center gap-1">
+                <FaCubes />
+                <span className="text-sm font-semibold hover:text-primary/80">
+                  Our Divisions
+                </span>
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                  {divisions.map((division) => (
+                    <ListItem
+                      key={division.name}
+                      title={division.name}
+                      href={division.link}
+                    >
+                      {division.desc}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
@@ -101,5 +127,31 @@ const Navbar = () => {
     </header>
   );
 };
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className,
+          )}
+          {...props}
+        >
+          <div className="text-sm font-semibold leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  );
+});
+ListItem.displayName = "ListItem";
 
 export default Navbar;

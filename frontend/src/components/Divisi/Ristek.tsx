@@ -12,16 +12,25 @@ const Ristek = () => {
   const [activeTab, setActiveTab] = React.useState("about");
   const router = useRouter();
   return (
-    <div className="flex flex-col items-start gap-7">
-      <Button variant={"ghost"} size={"icon"} onClick={() => router.back()}>
-        <ArrowLeft />
+    <div className="flex w-full flex-col items-start gap-4 px-4 py-4 sm:gap-7 sm:px-6 sm:py-6 lg:px-8">
+      <Button
+        variant={"ghost"}
+        size={"icon"}
+        onClick={() => router.push("/")}
+        className="hover:bg-red-100"
+      >
+        <ArrowLeft className="h-5 w-5" />
       </Button>
-      <div className="space-y-4">
-        <h1 className="max-w-2xl text-3xl font-bold tracking-tight text-red-500 md:text-5xl">
-          Research <br />
-          and Technology
+
+      <div className="space-y-3 sm:space-y-4">
+        <h1 className="max-w-2xl text-center text-2xl font-bold tracking-tight text-red-500 sm:text-3xl md:text-start lg:text-5xl">
+          Research <span className="inline sm:hidden">& Technology</span>
+          <span className="hidden sm:inline">
+            <br />
+            and Technology
+          </span>
         </h1>
-        <p className="max-w-2xl text-base font-medium text-muted-foreground">
+        <p className="max-w-2xl text-center text-sm font-medium text-muted-foreground sm:text-base md:text-start">
           Conducts research and development of open-source technology for FOSTI
           and the community.
         </p>
@@ -33,11 +42,17 @@ const Ristek = () => {
           className="w-full"
           onValueChange={setActiveTab}
         >
-          <div className="mb-8 flex justify-start">
-            <TabsList className="gradient-accent grid w-full max-w-md grid-cols-3">
-              <TabsTrigger value="about">About</TabsTrigger>
-              <TabsTrigger value="programs">Programs</TabsTrigger>
-              <TabsTrigger value="team">Meet The Team</TabsTrigger>
+          <div className="mb-4 flex justify-start sm:mb-8">
+            <TabsList className="gradient-accent grid w-full grid-cols-3 gap-1 sm:w-auto sm:min-w-[400px]">
+              <TabsTrigger value="about" className="text-sm">
+                About
+              </TabsTrigger>
+              <TabsTrigger value="programs" className="text-sm">
+                Programs
+              </TabsTrigger>
+              <TabsTrigger value="team" className="whitespace-nowrap text-sm">
+                Meet The Team
+              </TabsTrigger>
             </TabsList>
           </div>
 
