@@ -1,6 +1,6 @@
-import { RistekProgramType } from "@/types/image";
+import { ProgramType } from "@/types/image";
 
-export const ristekPrograms: RistekProgramType[] = [
+export const ristekPrograms: ProgramType[] = [
   {
     src: "https://placehold.co/600x400/png",
     width: 600,
