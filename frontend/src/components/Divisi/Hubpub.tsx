@@ -11,16 +11,21 @@ const Hubpub = () => {
   const router = useRouter();
   const [activeTab, setActiveTab] = React.useState("about");
   return (
-    <div className="flex flex-col items-start gap-7">
-      <Button variant={"ghost"} size={"icon"} onClick={() => router.push("/")}>
-        <ArrowLeft />
+    <div className="flex w-full flex-col items-start gap-4 px-4 py-4 sm:gap-7 sm:px-6 sm:py-6 lg:px-8">
+      <Button
+        variant={"ghost"}
+        size={"icon"}
+        onClick={() => router.push("/")}
+        className="hover:bg-red-100"
+      >
+        <ArrowLeft className="h-5 w-5" />
       </Button>
-      <div className="space-y-4">
-        <h1 className="max-w-2xl text-3xl font-bold tracking-tight text-red-500 md:text-5xl">
+      <div className="space-y-3 sm:space-y-4">
+        <h1 className="max-w-2xl text-center text-2xl font-bold tracking-tight text-red-500 sm:text-3xl md:text-start lg:text-5xl">
           Public <br />
           and Relations
         </h1>
-        <p className="max-w-2xl text-base font-medium text-muted-foreground">
+        <p className="max-w-2xl text-center text-sm font-medium text-muted-foreground sm:text-base md:text-start">
           Builds relationships and collaborations with various parties to expand
           FOSTI UMS's network.
         </p>
@@ -32,8 +37,8 @@ const Hubpub = () => {
           className="w-full"
           onValueChange={setActiveTab}
         >
-          <div className="mb-8 flex justify-start">
-            <TabsList className="gradient-accent grid w-full max-w-md grid-cols-3">
+          <div className="mb-4 flex justify-start sm:mb-8">
+            <TabsList className="gradient-accent grid w-full grid-cols-3 gap-1 sm:w-auto sm:min-w-[400px]">
               <TabsTrigger value="about">About</TabsTrigger>
               <TabsTrigger value="programs">Programs</TabsTrigger>
               <TabsTrigger value="team">Meet The Team</TabsTrigger>
@@ -41,11 +46,14 @@ const Hubpub = () => {
           </div>
 
           {/* About */}
-          <TabsContent className="flex flex-col gap-5" value="about">
-            <h3 className="max-w-2xl text-xl font-bold tracking-tight text-red-500 md:text-3xl">
+          <TabsContent
+            className="mt-9 flex flex-col gap-4 sm:gap-5 md:mt-3"
+            value="about"
+          >
+            <h3 className="max-w-2xl text-center text-xl font-bold tracking-tight text-red-500 sm:text-start md:text-3xl">
               About
             </h3>
-            <p className="max-w-4xl text-base font-semibold text-muted-foreground">
+            <p className="max-w-4xl text-center text-sm font-semibold text-muted-foreground sm:text-start sm:text-base">
               The Public and Relations division is responsible for building and
               maintaining relationships with external organizations, fostering
               collaborations, and expanding the network of FOSTI UMS to create

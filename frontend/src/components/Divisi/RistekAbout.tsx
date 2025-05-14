@@ -19,10 +19,10 @@ const RistekAbout = () => {
       className="mt-9 flex flex-col gap-4 sm:gap-5 md:mt-3"
       value="about"
     >
-      <h3 className="max-w-2xl text-center text-xl font-bold tracking-tight text-red-500 md:text-start md:text-3xl">
+      <h3 className="max-w-2xl text-center text-xl font-bold tracking-tight text-red-500 sm:text-start md:text-3xl">
         About
       </h3>
-      <p className="max-w-4xl text-center text-sm font-semibold text-muted-foreground sm:text-base md:text-center">
+      <p className="max-w-4xl text-center text-sm font-semibold text-muted-foreground sm:text-start sm:text-base">
         The Research and Technology division focuses on exploring and developing
         innovative open-source technologies. It aims to empower FOSTI and the
         community through cutting-edge research and practical solutions.
@@ -97,7 +97,7 @@ const RistekAbout = () => {
               </h2>
             </motion.div>
 
-            <div className="xs:grid-cols-2 grid grid-cols-1 gap-3 sm:gap-4 md:gap-6 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 xs:grid-cols-2 sm:gap-4 md:gap-6 lg:grid-cols-3">
               {achievements.map((achievement, index) => (
                 <AchievementCard
                   key={index}

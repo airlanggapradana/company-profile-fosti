@@ -18,7 +18,7 @@ const RistekTeam = () => {
         Get to know the brilliant minds behind the Research and Technology
         division.
       </p>
-      <div className="xs:gap-4 mt-5 grid grid-cols-2 gap-3 sm:gap-5 md:mt-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="mt-5 grid grid-cols-2 gap-3 xs:gap-4 sm:gap-5 md:mt-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
         {ristekTeam.map((member, index) => (
           <AnimatedContent
             delay={index * 100}
@@ -34,7 +34,7 @@ const RistekTeam = () => {
           >
             <Card
               key={index}
-              className="xs:gap-2 xs:p-3 relative flex h-full flex-col items-center gap-1.5 overflow-hidden rounded-lg border p-2 shadow-md transition-shadow hover:shadow-lg sm:gap-3 sm:p-4"
+              className="relative flex h-full flex-col items-center gap-1.5 overflow-hidden rounded-lg border p-2 shadow-md transition-shadow hover:shadow-lg xs:gap-2 xs:p-3 sm:gap-3 sm:p-4"
             >
               <ShineBorder
                 duration={(index += 15)}
@@ -45,8 +45,8 @@ const RistekTeam = () => {
                 ]}
                 borderWidth={1.5}
               />
-              <CardContent className="xs:gap-2 flex flex-col items-center gap-1.5 p-0">
-                <div className="xs:h-20 xs:w-20 relative h-16 w-16 sm:h-24 sm:w-24">
+              <CardContent className="flex flex-col items-center gap-1.5 p-0 xs:gap-2">
+                <div className="relative h-16 w-16 xs:h-20 xs:w-20 sm:h-24 sm:w-24">
                   <Image
                     unoptimized
                     src={member.src}
@@ -60,11 +60,13 @@ const RistekTeam = () => {
                   {member.name}
                 </h4>
                 <p className="text-center text-xs font-medium text-muted-foreground sm:text-sm">
-                  {member.role}
+                  {member.role === "RISTEK"
+                    ? "Research and Technology"
+                    : member.role}
                 </p>
                 <Link
-                  href={"https://www.linkedin.com/in/" + member.name}
-                  className="xs:mt-2 mt-1 transition-colors hover:text-blue-600 sm:mt-3"
+                  href={member.linkedin ? member.linkedin : "#"}
+                  className="mt-1 transition-colors hover:text-blue-600 xs:mt-2 sm:mt-3"
                   target="_blank"
                 >
                   <AiFillLinkedin className="h-4 w-4 sm:h-5 sm:w-5" />

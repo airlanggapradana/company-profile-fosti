@@ -25,4 +25,5 @@ export interface TeamType {
   height?: number;
   role: string;
   name: string;
+  linkedin?: string;
 }

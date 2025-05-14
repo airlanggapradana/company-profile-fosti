@@ -1,0 +1,118 @@
+import { TeamType } from "@/types/image";
+
+export const dataFostiAllMembers: TeamType[] = [
+  {
+    name: "Suryani Elmaghfiroh",
+    alt: "Suryani Elmaghfiroh",
+    role: "BPHI",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1icGSbgyzgp3AZHNF1DgIkEteeyeI3Wej",
+    linkedin: "https://www.linkedin.com/in/suryani-elmaghfiroh/",
+  },
+  {
+    name: "Airlangga Pradana Prakusa",
+    alt: "Airlangga Pradana Prakusa",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/D0ZmD46f/DSC05691.webp",
+    linkedin: "https://www.linkedin.com/in/airlanggapradana",
+  },
+  {
+    name: "Litri Ayu Setia Ningrum",
+    alt: "Litri Ayu Setia Ningrum",
+    role: "RISTEK",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1vqtd2ZFq9Qa2hXVn01tmc2GgGICfyH0Y",
+    linkedin: "-",
+  },
+  {
+    name: "Alya Rusyda Maharistya",
+    alt: "Alya Rusyda Maharistya",
+    role: "RISTEK",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1RBB_N2fd3M5oOmUxMZgSBEbGnmA5yfjO",
+    linkedin: "https://www.linkedin.com/in/alya-rusyda-maharistya/",
+  },
+  {
+    name: "Daffa Fadhil Mustafa",
+    alt: "Daffa Fadhil Mustafa",
+    role: "Keorganisasian",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1yAHe95z87F64yPXE8JX4a6ICrLyTOp2r",
+    linkedin: "-",
+  },
+  {
+    name: "Muhammad Syaiful Huda",
+    alt: "Muhammad Syaiful Huda",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/3NzQYYnB/DSC05822.webp",
+    linkedin: "-",
+  },
+  {
+    name: "ISNA CHOIRON NASIKHIN",
+    alt: "ISNA CHOIRON NASIKHIN",
+    role: "BPHI",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1kV0vZkltvlSOwBR8gLZzDR6Rqhh8MhhJ",
+    linkedin:
+      "https://www.linkedin.com/in/isnainoo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Yasir Al Mumtaz",
+    alt: "Yasir Al Mumtaz",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/9MtDDgvZ/DSC05837.webp",
+    linkedin: "-",
+  },
+  {
+    name: "Narendra Satya Adikurniawan",
+    alt: "Narendra Satya Adikurniawan",
+    role: "RISTEK",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1caPBPfib_FTTgLSRk0bFy6fc34XgoRh1",
+    linkedin: "www.linkedin.com/in/narendra-satya-adikurniawan",
+  },
+  {
+    name: "Ghurrotun Niswah Kafi",
+    alt: "Ghurrotun Niswah Kafi",
+    role: "BPHI",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1cD1YQA5J0-Agdlv0FUvblOm7jJEcY7km",
+    linkedin: "-",
+  },
+  {
+    name: "Farid Ahmad Fakih",
+    alt: "Farid Ahmad Fakih",
+    role: "RISTEK",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1KWAGPeo2WxbEVKzPlMGxaSBgqhhv2-S_",
+    linkedin: "www.linkedin.com/in/faridahmd17/",
+  },
+  {
+    name: "Dhandy Hananthiyo Ardhy Putra",
+    alt: "Dhandy Hananthiyo Ardhy Putra",
+    role: "BPHI",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1RCie3UacJzMoWSBruURPavyvMmrVrO4J",
+    linkedin:
+      "https://www.linkedin.com/in/dhandy-hananthiyo-ardhy-putra-b7b338364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Latifah Puji Lestari",
+    alt: "Latifah Puji Lestari",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/zXkFs0vL/DSC05946.jpg",
+    linkedin: "-",
+  },
+  {
+    name: "Arya Veda Setyanindito",
+    alt: "Arya Veda Setyanindito",
+    role: "RISTEK",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1nfw85Vh78Ui35lyVPV7_8KC87WgvtKA4",
+    linkedin: "www.linkedin.com/in/Aryavedo",
+  },
+  {
+    name: "Qonita Azizah",
+    alt: "Qonita Azizah",
+    role: "Keorganisasian",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1uJAV7b1XnKk7K--KGJbMErkoEfXQ2ORq",
+    linkedin: "-",
+  },
+  {
+    name: "Fahreza Andreansyah",
+    alt: "Fahreza Andreansyah",
+    role: "Hubungan Publik",
+    src: "https://drive.google.com/u/0/open?usp=forms_web&id=1GT_N3juMjnjMOq3_TwMJ0NmXxzXUC6OK",
+    linkedin: "-",
+  },
+];
