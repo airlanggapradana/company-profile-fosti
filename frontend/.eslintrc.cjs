@@ -38,6 +38,9 @@ const config = {
     ],
     "@typescript-eslint/prefer-optional-chain": "off",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/no-base-to-string": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/no-unnecessary-type-assertion": "off",
   },
 };
 module.exports = config;
