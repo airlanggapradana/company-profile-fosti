@@ -6,9 +6,12 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "FOSTI UMS",
+  title: {
+    template: "%s | FOSTI UMS",
+    default: "FOSTI UMS",
+  },
   description: "Company Profile FOSTI UMS",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "../../favicon_io/favicon.ico" }],
 };
 
 export default function RootLayout({
