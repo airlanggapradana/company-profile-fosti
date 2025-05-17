@@ -67,7 +67,11 @@ const KeorTeam = () => {
                     : member.role}
                 </p>
                 <Link
-                  href={member.linkedin ? member.linkedin : "#"}
+                  href={
+                    member.linkedin && member.linkedin !== "-"
+                      ? member.linkedin
+                      : "#"
+                  }
                   className="mt-1 transition-colors hover:text-blue-600 xs:mt-2 sm:mt-3"
                   target="_blank"
                 >

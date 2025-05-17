@@ -1,7 +1,7 @@
 import React from "react";
 import { TabsContent } from "../ui/tabs";
 import { motion } from "framer-motion";
-import elemen1 from "../../../public/167147170_10655670.png";
+import elemen1 from "../../../public/Group 220793.png";
 import elemen2 from "../../../public/29119038_Blowing_rocket_3d_cartoon_style_icon-removebg-preview.png";
 import Image from "next/image";
 import AchievementCard from "../AchievementCard";
@@ -58,16 +58,16 @@ const RistekAbout = () => {
         </motion.div>
 
         <motion.div
-          className="relative overflow-hidden rounded-2xl bg-red-700 shadow-xl"
+          className="relative rounded-2xl bg-red-700 shadow-xl"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <div className="absolute -right-12 -top-16 h-[10rem] w-[10rem] sm:h-[12rem] sm:w-[12rem] md:-right-16 md:-top-20 md:h-56 md:w-56">
+          <div className="absolute -right-12 -top-16 h-[10rem] w-[10rem] rotate-[260deg] sm:h-[12rem] sm:w-[12rem] md:-right-16 md:-top-20">
             <Image
               src={elemen1}
               alt="Ristek"
-              className="object-contain"
+              className="object-cover"
               fill
               priority
             />

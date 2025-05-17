@@ -4,10 +4,13 @@ import { Card, CardContent } from "./ui/card";
 import { TextAnimate } from "./magicui/text-animate";
 import AnimatedContent from "./AnimatedContent/AnimatedContent";
 import Link from "next/link";
+import { FaComputer } from "react-icons/fa6";
+import { IoIosPeople } from "react-icons/io";
+import { BsCameraReelsFill } from "react-icons/bs";
 
 const divisi = [
   {
-    icon: <Users className="mb-4 h-10 w-10 text-primary" />,
+    icon: <IoIosPeople className="mb-4 h-10 w-10 text-primary" />,
     title: "Organizational",
     delay: 100,
     href: "/divisi/keor",
@@ -15,7 +18,7 @@ const divisi = [
       "Fosters relationships among members and prepares new prospective members of FOSTI UMS.",
   },
   {
-    icon: <MonitorCog className="mb-4 h-10 w-10 text-primary" />,
+    icon: <FaComputer className="mb-4 h-10 w-10 text-primary" />,
     title: "Research and Technology",
     delay: 250,
     href: "/divisi/ristek",
@@ -23,7 +26,7 @@ const divisi = [
       "Conducts research and development of open-source technology for FOSTI and the community.",
   },
   {
-    icon: <ChartNoAxesCombinedIcon className="mb-4 h-10 w-10 text-primary" />,
+    icon: <BsCameraReelsFill className="mb-4 h-10 w-10 text-primary" />,
     title: "Public Relations",
     delay: 350,
     href: "/divisi/hubpub",
