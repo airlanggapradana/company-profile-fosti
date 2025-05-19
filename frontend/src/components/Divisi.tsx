@@ -1,12 +1,22 @@
-import { ChartNoAxesCombinedIcon, MonitorCog, Users } from "lucide-react";
 import React from "react";
-import { Card, CardContent } from "./ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
 import { TextAnimate } from "./magicui/text-animate";
 import AnimatedContent from "./AnimatedContent/AnimatedContent";
 import Link from "next/link";
 import { FaComputer } from "react-icons/fa6";
 import { IoIosPeople } from "react-icons/io";
 import { BsCameraReelsFill } from "react-icons/bs";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { bphiTeam } from "@/data/BPHI";
+import { TeamType } from "@/types/image";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const divisi = [
   {
@@ -38,6 +48,21 @@ const divisi = [
 const Divisi = () => {
   return (
     <section id="divisi" className="mx-auto max-w-screen-2xl px-5 py-28">
+      <div className="mb-12 space-y-3 text-center">
+        <h2 className="mb-4 bg-gradient-to-br from-red-500 to-orange-400 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
+          Meet Our Executives
+        </h2>
+        <p className="mx-auto max-w-xl text-sm font-medium text-muted-foreground sm:text-base md:max-w-3xl">
+          Meet the talented executives who drive our vision and lead our
+          organization to success.
+        </p>
+      </div>
+      <div className="mb-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {bphiTeam.map((executive, index) => (
+          <ExecutiveCard key={index} executive={executive} />
+        ))}
+      </div>
+
       <div className="mb-16 text-center">
         <h1 className="mb-4 bg-gradient-to-br from-red-500 to-orange-400 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">
           Divisions
@@ -84,5 +109,55 @@ const Divisi = () => {
     </section>
   );
 };
+
+function ExecutiveCard({ executive }: { executive: TeamType }) {
+  return (
+    <Card className="flex h-full flex-col overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+      <CardHeader className="flex flex-col items-center space-y-4 pb-2 pt-6 text-center">
+        <Avatar className="h-24 w-24 border-4 border-background shadow-md">
+          <AvatarImage
+            src={
+              typeof executive.src === "string"
+                ? executive.src
+                : "/placeholder.svg"
+            }
+            alt={executive.name}
+          />
+          <AvatarFallback>{executive.name}</AvatarFallback>
+        </Avatar>
+        <div>
+          <CardTitle className="text-xl font-bold text-red-500">
+            {executive.name}
+          </CardTitle>
+          <CardDescription className="text-base font-medium text-primary/80">
+            {executive.role}
+          </CardDescription>
+        </div>
+      </CardHeader>
+      <CardFooter className="flex justify-center gap-3 pb-6 pt-2">
+        <Link
+          href={
+            executive.linkedin && executive.linkedin !== "-"
+              ? executive.linkedin
+              : "#"
+          }
+          className={`mt-1 transition-colors ${
+            executive.linkedin && executive.linkedin !== "-"
+              ? "hover:text-blue-600"
+              : "cursor-not-allowed text-gray-400"
+          } xs:mt-2 sm:mt-3`}
+          target={
+            executive.linkedin && executive.linkedin !== "-"
+              ? "_blank"
+              : "_self"
+          }
+          aria-disabled={!executive.linkedin || executive.linkedin === "-"}
+        >
+          <AiFillLinkedin className="h-4 w-4 sm:h-5 sm:w-5" />
+        </Link>
+      </CardFooter>
+    </Card>
+  );
+}
 
 export default Divisi;

@@ -21,7 +21,7 @@ const RistekTeam = () => {
       <div className="mt-5 grid grid-cols-2 gap-3 xs:gap-4 sm:gap-5 md:mt-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
         {ristekTeam.map((member, index) => (
           <AnimatedContent
-            delay={index * 100}
+            delay={index * 50}
             distance={250}
             direction="vertical"
             reverse={false}
@@ -70,8 +70,17 @@ const RistekTeam = () => {
                       ? member.linkedin
                       : "#"
                   }
-                  className="mt-1 transition-colors hover:text-blue-600 xs:mt-2 sm:mt-3"
-                  target="_blank"
+                  className={`mt-1 transition-colors ${
+                    member.linkedin && member.linkedin !== "-"
+                      ? "hover:text-blue-600"
+                      : "cursor-not-allowed text-gray-400"
+                  } xs:mt-2 sm:mt-3`}
+                  target={
+                    member.linkedin && member.linkedin !== "-"
+                      ? "_blank"
+                      : "_self"
+                  }
+                  aria-disabled={!member.linkedin || member.linkedin === "-"}
                 >
                   <AiFillLinkedin className="h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "FOSTI UMS",
   },
   description: "Company Profile FOSTI UMS",
-  icons: [{ rel: "icon", url: "../../favicon_io/favicon.ico" }],
+  icons: [{ rel: "icon", url: "../../favicon_io/favicon-32x32.png" }],
 };
 
 export default function RootLayout({
