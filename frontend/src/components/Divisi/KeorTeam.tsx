@@ -63,7 +63,7 @@ const KeorTeam = () => {
                 </h4>
                 <p className="text-center text-xs font-medium text-muted-foreground sm:text-sm">
                   {member.role === "Keorganisasian"
-                    ? "Organizational"
+                    ? "Member of Organizational"
                     : member.role}
                 </p>
                 <Link

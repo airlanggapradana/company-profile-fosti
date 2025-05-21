@@ -63,7 +63,7 @@ const HubpubTeam = () => {
                 </h4>
                 <p className="text-center text-xs font-medium text-muted-foreground sm:text-sm">
                   {member.role === "Hubungan Publik"
-                    ? "Public Relations"
+                    ? "Member of Public Relations"
                     : member.role}
                 </p>
                 <Link

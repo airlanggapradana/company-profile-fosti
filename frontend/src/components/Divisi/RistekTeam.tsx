@@ -61,7 +61,7 @@ const RistekTeam = () => {
                 </h4>
                 <p className="text-center text-xs font-medium text-muted-foreground sm:text-sm">
                   {member.role === "RISTEK"
-                    ? "Research and Technology"
+                    ? "Member of Research and Technology"
                     : member.role}
                 </p>
                 <Link

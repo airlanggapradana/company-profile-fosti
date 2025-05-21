@@ -2,11 +2,56 @@ import { TeamType } from "@/types/image";
 
 export const dataFostiAllMembers: TeamType[] = [
   {
+    name: "Isna Choiron Nasikhin",
+    alt: "Isna Choiron Nasikhin",
+    role: "Director of FOSTI",
+    src: "https://i.postimg.cc/rmk4tNLM/Tak-berjudul4-20250509230042-ISNA-CHOIRON-NASIKHIN.webp",
+    linkedin: "https://www.linkedin.com/in/isnainoo/",
+  },
+  {
+    name: "Carissa Ayu Ariyani",
+    alt: "Carissa Ayu Ariyani",
+    role: "Vice Director of FOSTI",
+    src: "https://i.postimg.cc/HLdxpSZB/DSC05975-CARISSA-AYU-ARIYANI.webp",
+  },
+  {
+    name: "Ghurrotun Niswah Kafi",
+    alt: "Ghurrotun Niswah Kafi",
+    role: "Secretary 1",
+    src: "https://i.postimg.cc/WbHJ7vP9/0-FB39-C78-683-D-4-A20-BDF6-27-C7-C375-D353-niswah-kafi.webp",
+  },
+  {
     name: "Suryani Elmaghfiroh",
     alt: "Suryani Elmaghfiroh",
-    role: "BPHI",
+    role: "Secretary 2",
     src: "https://i.postimg.cc/SKnDtbpG/Elma-fosti-SURYANI-ELMAGHFIROH.webp",
     linkedin: "https://www.linkedin.com/in/suryani-elmaghfiroh/",
+  },
+  {
+    name: "Ahmad Taslim Anugrah",
+    alt: "Ahmad Taslim Anugrah",
+    role: "Head of Organizational",
+    src: "https://i.postimg.cc/bvSTpSzh/wmremove-transformed-1-Taslim-Anugerah.webp",
+  },
+  {
+    name: "Eric Fathoni Hidayatullah",
+    alt: "Eric Fathoni Hidayatullah",
+    role: "Secretary of Organizational",
+    src: "https://i.postimg.cc/2yNfHchQ/IMG-20250520-220250-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Ammar Miftahudin Anshori",
+    alt: "Ammar Miftahudin Anshori",
+    role: "Head of Research and Technology",
+    src: "https://i.postimg.cc/V66zJwVm/DSC04406-Ammar-Uden.webp",
+  },
+  {
+    name: "Rahadatul Aisy Tsamarah Ilyas",
+    alt: "Rahadatul Aisy Tsamarah Ilyas",
+    role: "Secretary of Research and Technology",
+    src: "https://i.postimg.cc/qq1Q7wTR/DSC05197-rahadatul-Aisy.webp",
+    linkedin:
+      "http://www.linkedin.com/in/rahadatul-aisy-tsamarah-ilyas-9b8a91365",
   },
   {
     name: "Airlangga Pradana Prakusa",
@@ -40,13 +85,7 @@ export const dataFostiAllMembers: TeamType[] = [
     role: "Keorganisasian",
     src: "https://i.postimg.cc/3NzQYYnB/DSC05822.webp",
   },
-  {
-    name: "Isna Choiron Nasikhin",
-    alt: "Isna Choiron Nasikhin",
-    role: "BPHI",
-    src: "https://i.postimg.cc/rmk4tNLM/Tak-berjudul4-20250509230042-ISNA-CHOIRON-NASIKHIN.webp",
-    linkedin: "https://www.linkedin.com/in/isnainoo/",
-  },
+
   {
     name: "Yasir Al Mumtaz",
     alt: "Yasir Al Mumtaz",
@@ -60,12 +99,7 @@ export const dataFostiAllMembers: TeamType[] = [
     src: "https://i.postimg.cc/90xwK3wQ/foto-naren-1x1-NARENDRA-SATYA-ADIKURNIAWAN.webp",
     linkedin: "https://www.linkedin.com/in/narendra-satya-adikurniawan",
   },
-  {
-    name: "Ghurrotun Niswah Kafi",
-    alt: "Ghurrotun Niswah Kafi",
-    role: "BPHI",
-    src: "https://i.postimg.cc/WbHJ7vP9/0-FB39-C78-683-D-4-A20-BDF6-27-C7-C375-D353-niswah-kafi.webp",
-  },
+
   {
     name: "Farid Ahmad Fakih",
     alt: "Farid Ahmad Fakih",
@@ -76,10 +110,17 @@ export const dataFostiAllMembers: TeamType[] = [
   {
     name: "Dhandy Hananthiyo Ardhy Putra",
     alt: "Dhandy Hananthiyo Ardhy Putra",
-    role: "BPHI",
+    role: "Head of Public Relations",
     src: "https://i.postimg.cc/CLzR5Qfb/IMG-20250511-152723-Dhandy-Hananthiyo.webp",
     linkedin:
       "https://www.linkedin.com/in/dhandy-hananthiyo-ardhy-putra-b7b338364",
+  },
+  {
+    name: "Alfidya Kurnia Ayu Febriana",
+    alt: "Alfidya Kurnia Ayu Febriana",
+    role: "Secretary of Public Relations",
+    src: "https://i.postimg.cc/wx2hKQhN/ALFIDYAKK-ALFIDYA-KURNIA-AYU-FEBRIANA.webp",
+    linkedin: "http://www.linkedin.com/in/alfidya-febriana-48ba1735a",
   },
   {
     name: "Latifah Puji Lestari",
@@ -151,14 +192,7 @@ export const dataFostiAllMembers: TeamType[] = [
     role: "Keorganisasian",
     src: "https://i.postimg.cc/DZqM710J/Bayu-Ajie-1-Bayu-AP.webp",
   },
-  {
-    name: "Rahadatul Aisy Tsamarah Ilyas",
-    alt: "Rahadatul Aisy Tsamarah Ilyas",
-    role: "RISTEK",
-    src: "https://i.postimg.cc/qq1Q7wTR/DSC05197-rahadatul-Aisy.webp",
-    linkedin:
-      "http://www.linkedin.com/in/rahadatul-aisy-tsamarah-ilyas-9b8a91365",
-  },
+
   {
     name: "Lintang Maulia Wijanti",
     alt: "Lintang Maulia Wijanti",
@@ -174,13 +208,13 @@ export const dataFostiAllMembers: TeamType[] = [
   {
     name: "Wahyuningtyas Ayu Fadhila",
     alt: "Wahyuningtyas Ayu Fadhila",
-    role: "BPHI",
+    role: "Finance 1",
     src: "https://i.postimg.cc/7PcW9479/DSC00270-WAHYUNINGTYAS-AYU-FADHILA.webp",
   },
   {
     name: "Nadia Qurrotu Ainina",
     alt: "Nadia Qurrotu Ainina",
-    role: "BPHI",
+    role: "Finance 2",
     src: "https://i.postimg.cc/C54RbDm6/nadiaqu-Nadia-Qurrotu-Ainina.webp",
     linkedin: "http://linkedin.com/in/nadiaqu",
   },
@@ -269,12 +303,7 @@ export const dataFostiAllMembers: TeamType[] = [
     role: "Hubungan Publik",
     src: "https://i.postimg.cc/jSz2YVXD/quality-restoration-20250518143848255-Fadella-Dhewi-Puspasari.webp",
   },
-  {
-    name: "Carissa Ayu Ariyani",
-    alt: "Carissa Ayu Ariyani",
-    role: "BPHI",
-    src: "https://i.postimg.cc/HLdxpSZB/DSC05975-CARISSA-AYU-ARIYANI.webp",
-  },
+
   {
     name: "Muhammad Aksal Pratama",
     alt: "Muhammad Aksal Pratama",
@@ -368,25 +397,7 @@ export const dataFostiAllMembers: TeamType[] = [
     src: "https://i.postimg.cc/RZVp506S/IMG-20250520-105225-RANI-APRILIA.webp",
     linkedin: "https://www.linkedin.com/in/rani-a-391a9b326",
   },
-  {
-    name: "Ahmad Taslim Anugrah",
-    alt: "Ahmad Taslim Anugrah",
-    role: "Keorganisasian",
-    src: "https://i.postimg.cc/bvSTpSzh/wmremove-transformed-1-Taslim-Anugerah.webp",
-  },
-  {
-    name: "Alfidya Kurnia Ayu Febriana",
-    alt: "Alfidya Kurnia Ayu Febriana",
-    role: "Hubungan Publik",
-    src: "https://i.postimg.cc/wx2hKQhN/ALFIDYAKK-ALFIDYA-KURNIA-AYU-FEBRIANA.webp",
-    linkedin: "http://www.linkedin.com/in/alfidya-febriana-48ba1735a",
-  },
-  {
-    name: "Ammar Miftahudin Anshori",
-    alt: "Ammar Miftahudin Anshori",
-    role: "RISTEK",
-    src: "https://i.postimg.cc/V66zJwVm/DSC04406-Ammar-Uden.webp",
-  },
+
   {
     name: "Faiz Rifiyanto",
     alt: "Faiz Rifiyanto",
@@ -472,5 +483,212 @@ export const dataFostiAllMembers: TeamType[] = [
     alt: "Sultan Faiz Mochammad",
     role: "RISTEK",
     src: "https://i.postimg.cc/G2W7DJmz/DSC05670-Sultan-Faiz-Mochammad.webp",
+    linkedin:
+      "https://id.linkedin.com/in/sultan-faiz-mochammad-sultan-283a4b349",
+  },
+  {
+    name: "Sekar Kaltsum Anindita Pratiwi",
+    alt: "Sekar Kaltsum Anindita Pratiwi",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/MTxxW339/IMG-20250520-163427-486-Sekar.webp",
+    linkedin: "https://www.linkedin.com/in/sekar-kaltsum-8423992b2",
+  },
+  {
+    name: "Muhammad Raafky",
+    alt: "Muhammad Raafky",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/SRxh92h8/M-Raafky-2-Muhammad-Raafky.webp",
+    linkedin: "https://www.linkedin.com/in/muhammad-raafky-1753b3285",
+  },
+  {
+    name: "Muhammad Farid Romadhoni Alqodr",
+    alt: "Muhammad Farid Romadhoni Alqodr",
+    role: "Hubungan Publik",
+    src: "https://i.postimg.cc/3JWhJv9Q/DSC07379-Muhammad-Farid.webp",
+    linkedin: "http://www.linkedin.com/in/eefdxx",
+  },
+  {
+    name: "Syahru Romadhon",
+    alt: "Syahru Romadhon",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/25Dgvbd6/DSC05979-Syahru-Romadhon-Syahru.webp",
+  },
+  {
+    name: "Rafa Arsila Pratama",
+    alt: "Rafa Arsila Pratama",
+    role: "Hubungan Publik",
+    src: "https://i.postimg.cc/Pxfc3gRn/eb5a19e7-0bc4-4ba3-874a-b64b3881a090-Rafa-Pratama.webp",
+  },
+  {
+    name: "Muhammad Ilham",
+    alt: "Muhammad Ilham",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/gjn7dvpM/IMG-0453-muhammad-Ilham.webp",
+  },
+  {
+    name: "Muhammad Suhendra",
+    alt: "Muhammad Suhendra",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/Fsk6BgDz/M-Suhendra-1-MUHAMMAD-SUHENDRA.webp",
+  },
+  {
+    name: "Muhammad Risqi Artaka",
+    alt: "Muhammad Risqi Artaka",
+    role: "Hubungan Publik",
+    src: "https://i.postimg.cc/x1rZDJ4R/M-Risqi-Artaka-1-MUHAMMAD-RISQI-ARTAKA.webp",
+  },
+  {
+    name: "Joko Supriyanto",
+    alt: "Joko Supriyanto",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/52wRx9cM/0-Joko-Supriyanto.webp",
+    linkedin: "https://www.linkedin.com/in/josumaru/",
+  },
+  {
+    name: "Bastian Maulana",
+    alt: "Bastian Maulana",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/44jGy30K/bastian-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Usvatun Khasanah",
+    alt: "Usvatun Khasanah",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/hG4W6QXY/usva-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Abdul Lathif Maftuh",
+    alt: "Abdul Lathif Maftuh",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/zXTsfFWM/Abdul-Lathif-2-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Abdul Rahman Qalbun Salim",
+    alt: "Abdul Rahman Qalbun Salim",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/d3rxLJ7d/Abdul-Rahman-2-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Andika Huga Widyatama",
+    alt: "Andika Huga Widyatama",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/PrH6Ssp3/Andika-Huga-2-Andika-huga.webp",
+    linkedin: "https://www.linkedin.com/in/andika-huga-widyatama-737413246",
+  },
+  {
+    name: "Adhiyaksa Vian Nugroho",
+    alt: "Adhiyaksa Vian Nugroho",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/Gp6KYZnj/Adhiyaksa-2-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Esthi Sekar Pratiwi",
+    alt: "Esthi Sekar Pratiwi",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/4dCvnVpL/Esthi-Sekar-2-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Farrel Fisrtyanti Putri Nugroho",
+    alt: "Farrel Fisrtyanti Putri Nugroho",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/J47Ny1BL/farel-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Ahmad Jamaludien",
+    alt: "Ahmad Jamaludien",
+    role: "Hubungan Publik",
+    src: "https://i.postimg.cc/prsnQFnt/IMG-2665-Ahmad-Jamaludien.webp",
+  },
+  {
+    name: "Muhammad Rifki Nanda Arisepta",
+    alt: "Muhammad Rifki Nanda Arisepta",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/Gtm4pmgg/M-Rifki-Nanda-2-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Muhammad Syahid Kusasih",
+    alt: "Muhammad Syahid Kusasih",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/wBY3mVbm/M-Syahid-Kusasih-2-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Naufal Fauzan",
+    alt: "Naufal Fauzan",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/VL3kxgwV/Naufal-Fauzan2-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Paramesti Hayuananto",
+    alt: "Paramesti Hayuananto",
+    role: "Keorganisasian",
+    src: "https://i.postimg.cc/mD2LY63t/Paramesti-2-14-Eric-Fathoni.webp",
+  },
+  {
+    name: "Kamasetya Dwi Dzaka",
+    alt: "Kamasetya Dwi Dzaka",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/qvs49djN/Kamasetya-Dwi-2-Kamasetya.webp",
+    linkedin: "https://www.linkedin.com/in/kama-setya-301aaa328",
+  },
+  {
+    name: "Yola Tria Sitma",
+    alt: "Yola Tria Sitma",
+    role: "Hubungan Publik",
+    src: "https://i.postimg.cc/kgvDW8rY/15-A7-A594-782-B-4-C8-D-A46-C-9364-C4-E1-F716-Yolatria-sitmaa.webp",
+  },
+  {
+    name: "Ilham Akbar Yudistira",
+    alt: "Ilham Akbar Yudistira",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/qM87dn7B/Ilham-Akbar-1-ilham-progate-ID.webp",
+  },
+  {
+    name: "Putri Indah Wulandari",
+    alt: "Putri Indah Wulandari",
+    role: "Hubungan Publik",
+    src: "https://i.postimg.cc/8kvphWMd/1429e98a-3ec2-42d2-abfc-0f0e2f645a22-PUTRI-INDAH-W.webp",
+  },
+
+  {
+    name: "Erbita Putri Apriliyana",
+    alt: "Erbita Putri Apriliyana",
+    role: "Hubungan Publik",
+    src: "https://i.postimg.cc/B6Dr1TkX/1000072701-Erbita-Putri-Apriliyana.webp",
+  },
+  {
+    name: "Dhiyaul Haq 'Athaullah",
+    alt: "Dhiyaul Haq 'Athaullah",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/m2d5kpkm/cropped-image-Dhiyaul-Haq-Athaullah.webp",
+  },
+  {
+    name: "Muhammad Java Rahmanda",
+    alt: "Muhammad Java Rahmanda",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/y6jfppm7/java-rahadatul-Aisy.webp",
+  },
+  {
+    name: "Ardian Gymnastiar",
+    alt: "Ardian Gymnastiar",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/zBjkM3Rx/ardian-rahadatul-Aisy.webp",
+  },
+  {
+    name: "Kevin Putra Pratama",
+    alt: "Kevin Putra Pratama",
+    role: "RISTEK",
+    src: "https://i.postimg.cc/jjYQSyH8/kevin-rahadatul-Aisy.webp",
+  },
+  {
+    name: "Benediktus Michael Adolf",
+    alt: "Benediktus Michael Adolf",
+    role: "Hubungan Publik",
+    src: "https://i.postimg.cc/ZK16w6MT/DSC00265-Michael-Sumapode.webp",
+  },
+  {
+    name: "Muhammad Attamar Chadafi",
+    alt: "Muhammad Attamar Chadafi",
+    role: "Hubungan Publik",
+    src: "https://i.postimg.cc/VshtNj1j/DSC01561-At-Gans.webp",
   },
 ];
