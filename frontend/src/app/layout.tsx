@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/utils/theme-provider";
 import { type Metadata } from "next";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: {
@@ -25,6 +26,7 @@ export default function RootLayout({
             <main className="gradient-bg-main min-h-screen">
               <Navbar />
               {children}
+              <Analytics />
               <Footer />
             </main>
           </AntdRegistry>
