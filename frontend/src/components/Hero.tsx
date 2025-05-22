@@ -59,15 +59,6 @@ const Hero = () => {
         <div className="md:w-1/2">
           <ImageCollage />
         </div>
-        {/* <div className="md:w-1/2">
-          <Card className="relative overflow-hidden p-2 shadow-md">
-            <ShineBorder
-              shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-              borderWidth={3}
-            />
-            <Image src={image} alt="Image" className="w-full rounded-sm" />
-          </Card>
-        </div> */}
       </div>
     </section>
   );
