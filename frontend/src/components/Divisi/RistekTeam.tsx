@@ -21,7 +21,7 @@ const RistekTeam = () => {
       <div className="mt-5 grid grid-cols-2 gap-3 xs:gap-4 sm:gap-5 md:mt-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
         {ristekTeam.map((member, index) => (
           <AnimatedContent
-            delay={index * 50}
+            delay={index * 10}
             distance={250}
             direction="vertical"
             reverse={false}

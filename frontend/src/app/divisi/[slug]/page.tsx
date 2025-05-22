@@ -11,19 +11,19 @@ export async function generateMetadata({
   const { slug } = await params;
   if (slug === "ristek") {
     return {
-      title: "Ristek",
+      title: "RISTEK",
       description: "Divisi Riset dan Teknologi FOSTI UMS",
     };
   }
   if (slug === "hubpub") {
     return {
-      title: "Hubpub",
+      title: "HUBPUB",
       description: "Divisi Hubungan Publik FOSTI UMS",
     };
   }
   if (slug === "keor") {
     return {
-      title: "Keorganisasian",
+      title: "KEOR",
       description: "Divisi Keorganisasian FOSTI UMS",
     };
   }
