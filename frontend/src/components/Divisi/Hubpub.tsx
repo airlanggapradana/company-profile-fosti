@@ -6,6 +6,8 @@ import HubpubTeam from "./HubpubTeam";
 import { Button } from "../ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import fotbar from "../../../public/DSC03648.webp";
 
 const Hubpub = () => {
   const router = useRouter();
@@ -20,15 +22,27 @@ const Hubpub = () => {
       >
         <ArrowLeft className="h-5 w-5" />
       </Button>
-      <div className="space-y-3 sm:space-y-4">
-        <h1 className="max-w-2xl text-center text-2xl font-bold tracking-tight text-red-500 sm:text-3xl md:text-start lg:text-5xl">
-          Public <br />
-          and Relations
-        </h1>
-        <p className="max-w-2xl text-center text-sm font-medium text-muted-foreground sm:text-base md:text-start">
-          Builds relationships and collaborations with various parties to expand
-          FOSTI UMS's network.
-        </p>
+
+      <div className="flex w-full flex-col-reverse items-center gap-6 sm:flex-row sm:gap-8">
+        <div className="flex-1 space-y-3 sm:space-y-4">
+          <h1 className="max-w-2xl text-center text-2xl font-bold tracking-tight text-red-500 sm:text-3xl md:text-start lg:text-5xl">
+            Public <br />
+            and Relations
+          </h1>
+          <p className="max-w-2xl text-center text-sm font-medium text-muted-foreground sm:text-base md:text-start">
+            Builds relationships and collaborations with various parties to
+            expand FOSTI UMS's network.
+          </p>
+        </div>
+        <div className="mb-4 flex-shrink-0 sm:mb-0">
+          <Image
+            unoptimized
+            priority
+            src={fotbar}
+            alt="Hubpub Fotbar"
+            className="h-44 w-80 rounded-xl object-cover shadow-md sm:h-56 sm:w-80 md:h-[18rem] md:w-[28rem] lg:h-[25rem] lg:w-[45rem]"
+          />
+        </div>
       </div>
 
       <div className="w-full">

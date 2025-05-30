@@ -1,5 +1,5 @@
 import { ImageType } from "../types/image";
-import foto1 from "../../public/image1_blrfxf.webp";
+import foto1 from "../../public/DSC03502.webp";
 import foto2 from "../../public/20250308_124553.webp";
 import foto3 from "../../public/IMG_6051.webp";
 import foto5 from "../../public/DSC00076.webp";

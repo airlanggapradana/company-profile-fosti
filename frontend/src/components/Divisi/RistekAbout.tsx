@@ -63,11 +63,11 @@ const RistekAbout = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <div className="absolute -right-12 -top-16 h-[10rem] w-[10rem] rotate-[260deg] sm:h-[12rem] sm:w-[12rem] md:-right-16 md:-top-20">
+          <div className="absolute -right-8 -top-12 h-[8rem] w-[8rem] rotate-[250deg] xs:-right-10 xs:-top-14 xs:h-[6rem] xs:w-[6rem] sm:-right-12 sm:-top-16 md:-right-16 md:-top-20 md:h-[10rem] md:w-[10rem] lg:-right-20 lg:-top-24">
             <Image
               src={elemen1}
               alt="Ristek"
-              className="object-cover"
+              className="object-contain"
               fill
               priority
             />

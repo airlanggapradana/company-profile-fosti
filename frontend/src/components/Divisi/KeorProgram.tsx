@@ -22,10 +22,10 @@ const KeorProgram = () => {
               alt={program.alt}
               width={program.width}
               height={program.height}
-              className="w-full rounded-lg object-cover"
+              className="h-[18rem] w-full rounded-lg object-cover"
             />
             <h4 className="text-lg font-bold text-red-500">{program.title}</h4>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm font-medium text-muted-foreground">
               {program.description}
             </p>
           </div>

@@ -7,6 +7,8 @@ import { Button } from "../ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import RistekAbout from "./RistekAbout";
+import Image from "next/image";
+import fotbar from "../../../public/DSC03564.webp";
 
 const Ristek = () => {
   const [activeTab, setActiveTab] = React.useState("about");
@@ -22,18 +24,29 @@ const Ristek = () => {
         <ArrowLeft className="h-5 w-5" />
       </Button>
 
-      <div className="space-y-3 sm:space-y-4">
-        <h1 className="max-w-2xl text-center text-2xl font-bold tracking-tight text-red-500 sm:text-3xl md:text-start lg:text-5xl">
-          Research <span className="inline sm:hidden">& Technology</span>
-          <span className="hidden sm:inline">
-            <br />
-            and Technology
-          </span>
-        </h1>
-        <p className="max-w-2xl text-center text-sm font-medium text-muted-foreground sm:text-base md:text-start">
-          Conducts research and development of open-source technology for FOSTI
-          and the community.
-        </p>
+      <div className="flex w-full flex-col-reverse items-center gap-6 sm:flex-row sm:gap-8">
+        <div className="flex-1 space-y-3 sm:space-y-4">
+          <h1 className="max-w-2xl text-center text-2xl font-bold tracking-tight text-red-500 sm:text-left sm:text-3xl lg:text-5xl">
+            Research <span className="inline sm:hidden">& Technology</span>
+            <span className="hidden sm:inline">
+              <br />
+              and Technology
+            </span>
+          </h1>
+          <p className="max-w-2xl text-center text-sm font-medium text-muted-foreground sm:text-left sm:text-base">
+            Conducts research and development of open-source technology for
+            FOSTI and the community.
+          </p>
+        </div>
+        <div className="mb-4 flex-shrink-0 sm:mb-0">
+          <Image
+            unoptimized
+            priority
+            src={fotbar}
+            alt="Ristek Fotbar"
+            className="h-44 w-80 rounded-xl object-cover shadow-md sm:h-56 sm:w-80 md:h-[18rem] md:w-[28rem] lg:h-[25rem] lg:w-[45rem]"
+          />
+        </div>
       </div>
 
       <div className="w-full">

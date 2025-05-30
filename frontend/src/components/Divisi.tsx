@@ -17,6 +17,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { bphiTeam } from "@/data/BPHI";
 import { TeamType } from "@/types/image";
 import { AiFillLinkedin } from "react-icons/ai";
+import Image from "next/image";
+import fotbar from "../../public/DSC03669.webp";
 
 const divisi = [
   {
@@ -57,10 +59,21 @@ const Divisi = () => {
           organization to success.
         </p>
       </div>
-      <div className="mb-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {bphiTeam.map((executive, index) => (
-          <ExecutiveCard key={index} executive={executive} />
-        ))}
+      <div className="relative mb-16 flex flex-col-reverse items-center gap-8 rounded-2xl bg-gradient-to-tr from-red-500 to-slate-900 p-4 shadow-lg ring-1 ring-red-200/40 md:flex-row md:gap-10 md:p-8">
+        <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {bphiTeam.map((executive, index) => (
+            <ExecutiveCard key={index} executive={executive} />
+          ))}
+        </div>
+        <div className="mb-4 flex w-full justify-center md:mb-0 md:w-auto">
+          <Image
+            unoptimized
+            priority
+            src={fotbar}
+            alt="Fostibar"
+            className="h-44 w-80 rounded-xl object-cover shadow-md ring-2 ring-red-300 sm:h-56 sm:w-80 md:h-[18rem] md:w-[28rem] lg:h-[25rem] lg:w-[75rem]"
+          />
+        </div>
       </div>
 
       <div className="mb-16 text-center">
@@ -112,9 +125,9 @@ const Divisi = () => {
 
 function ExecutiveCard({ executive }: { executive: TeamType }) {
   return (
-    <Card className="flex h-full flex-col overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+    <Card className="mx-auto flex h-full w-full flex-col overflow-hidden transition-shadow duration-300 hover:shadow-lg sm:max-w-xs md:max-w-sm">
       <CardHeader className="flex flex-col items-center space-y-4 pb-2 pt-6 text-center">
-        <Avatar className="h-24 w-24 border-4 border-background shadow-md">
+        <Avatar className="h-16 w-16 border-4 border-background shadow-md sm:h-24 sm:w-24">
           <AvatarImage
             src={
               typeof executive.src === "string"
@@ -125,11 +138,11 @@ function ExecutiveCard({ executive }: { executive: TeamType }) {
           />
           <AvatarFallback>{executive.name}</AvatarFallback>
         </Avatar>
-        <div>
-          <CardTitle className="text-xl font-bold text-red-500">
+        <div className="space-y-1">
+          <CardTitle className="text-lg font-bold text-red-500">
             {executive.name}
           </CardTitle>
-          <CardDescription className="text-base font-medium text-primary/80">
+          <CardDescription className="text-sm font-medium text-muted-foreground">
             {executive.role}
           </CardDescription>
         </div>
