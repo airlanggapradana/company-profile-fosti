@@ -17,7 +17,7 @@ const Partners = () => {
         </p>
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-5 md:flex-row md:gap-7">
+      <div className="flex flex-col items-center justify-center gap-5 rounded-2xl bg-gradient-to-tr from-teal-500 to-slate-800 p-4 shadow-lg ring-2 ring-teal-300/40 md:flex-row md:gap-8">
         <Image
           src={
             "https://news.ums.ac.id/id/wp-content/uploads/sites/2/2022/12/Resmi_Logo_UMS_Color_FullText.png"
@@ -34,7 +34,7 @@ const Partners = () => {
           alt="prodi"
           width={300}
           height={300}
-          className="h-auto w-60 invert dark:invert-0 md:w-[250px] lg:w-[300px]"
+          className="h-auto w-60 md:w-[250px] lg:w-[300px]"
         />
       </div>
     </section>

@@ -8,7 +8,7 @@ import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import RistekAbout from "./RistekAbout";
 import Image from "next/image";
-import fotbar from "../../../public/DSC03564.webp";
+import fotbar from "../../../public/ristek.webp";
 
 const Ristek = () => {
   const [activeTab, setActiveTab] = React.useState("about");

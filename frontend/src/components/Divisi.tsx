@@ -15,9 +15,9 @@ import { IoIosPeople } from "react-icons/io";
 import { BsCameraReelsFill } from "react-icons/bs";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { bphiTeam } from "@/data/BPHI";
-import { TeamType } from "@/types/image";
+import { type TeamType } from "@/types/image";
 import { AiFillLinkedin } from "react-icons/ai";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import fotbar from "../../public/DSC03669.webp";
 
 const divisi = [
@@ -132,7 +132,7 @@ function ExecutiveCard({ executive }: { executive: TeamType }) {
             src={
               typeof executive.src === "string"
                 ? executive.src
-                : "/placeholder.svg"
+                : (executive.src as StaticImageData).src
             }
             alt={executive.name}
           />
