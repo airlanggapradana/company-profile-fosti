@@ -38,6 +38,7 @@ const Hubpub = () => {
           <Image
             unoptimized
             priority
+            loading={"eager"}
             src={fotbar}
             alt="Hubpub Fotbar"
             className="h-44 w-80 rounded-xl object-cover shadow-md sm:h-56 sm:w-80 md:h-[18rem] md:w-[28rem] lg:h-[25rem] lg:w-[45rem]"

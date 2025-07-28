@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageType } from "@/types/image";
+import { type ImageType } from "@/types/image";
 import Image from "next/image";
 
 interface ImageCardProps {
@@ -23,7 +23,9 @@ const ImageCard: React.FC<ImageCardProps> = ({ image, className }) => {
           height={image.height}
           alt={image.alt}
           className="h-full w-full object-cover"
-          loading="lazy"
+          unoptimized
+          loading={"eager"}
+          loader={({ src }) => src} // Use the default loader for Next.js
         />
       </div>
       <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 translate-y-8 transform bg-gradient-to-t from-black/70 to-transparent p-4 text-white opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
