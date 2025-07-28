@@ -6,9 +6,9 @@ import React from "react";
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
   if (slug === "ristek") {
     return {
       title: "RISTEK",
@@ -27,15 +27,18 @@ export async function generateMetadata({
       description: "Divisi Keorganisasian FOSTI UMS",
     };
   }
-  return null;
+  return {
+    title: "Divisi FOSTI UMS",
+    description: "Divisi-divisi di FOSTI UMS",
+  };
 }
 
 export default async function DivisiPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
   return (
     <div className="mx-auto max-w-screen-2xl pb-28 pt-20 md:pt-32">
       {slug === "ristek" && <Ristek />}
