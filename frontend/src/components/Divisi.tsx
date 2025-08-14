@@ -59,7 +59,7 @@ const Divisi = () => {
           organization to success.
         </p>
       </div>
-      <div className="relative mb-16 flex flex-col-reverse items-center gap-8 rounded-2xl bg-gradient-to-tr from-red-500 to-slate-900 p-4 shadow-lg ring-1 ring-red-200/40 md:flex-row md:gap-10 md:p-8">
+      <div className="relative mb-16 flex flex-col items-center gap-8 rounded-2xl bg-gradient-to-tr from-red-500 to-slate-900 p-4 shadow-lg ring-1 ring-red-200/40 md:flex-row md:gap-10 md:p-8">
         <div className="mb-4 flex w-full justify-center md:mb-0 md:w-auto">
           <Image
             unoptimized

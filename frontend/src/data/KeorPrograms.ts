@@ -1,8 +1,9 @@
-import { ProgramType } from "@/types/image";
+import { type ProgramType } from "@/types/image";
 import program1 from "../../public/20250308_124553.webp";
 import program2 from "../../public/IMG_6051.webp";
 import program3 from "../../public/DSC00076.webp";
 import program4 from "../../public/DSC03390.webp";
+import program5 from "../../public/IMG_0274.png";
 
 export const keorPrograms: ProgramType[] = [
   {
@@ -42,12 +43,12 @@ export const keorPrograms: ProgramType[] = [
       "A strategic planning session where members collaborate to establish organizational goals, develop action plans, and align on key initiatives for the upcoming period.",
   },
   {
-    src: "https://placehold.co/600x400/png",
+    src: program5,
     width: 600,
     height: 400,
     alt: "Program 5",
-    title: "Program 5",
+    title: "Fosti Kajian",
     description:
-      "A brief description of Program 3, emphasizing its contributions.",
+      "A regular spiritual discussion program aimed at strengthening faith and devotion to God through collaborative study sessions and reflective conversations.",
   },
 ];

@@ -1,5 +1,6 @@
-import { ProgramType } from "@/types/image";
+import { type ProgramType } from "@/types/image";
 import fosclass from "../../public/IMG_4585.webp";
+import ost from "../../public/IMG_2402.png";
 
 export const ristekPrograms: ProgramType[] = [
   {
@@ -12,7 +13,7 @@ export const ristekPrograms: ProgramType[] = [
       "A program designed to elevate members' technical skills by providing hands-on experience with open-source projects and fostering collaboration.",
   },
   {
-    src: "https://placehold.co/600x400/png",
+    src: ost,
     width: 600,
     height: 400,
     alt: "Program 2",

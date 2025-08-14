@@ -1,4 +1,4 @@
-import { ImageType } from "../types/image";
+import { type ImageType } from "@/types/image";
 import foto1 from "../../public/DSC03502.webp";
 import foto2 from "../../public/20250308_124553.webp";
 import foto3 from "../../public/IMG_6051.webp";
