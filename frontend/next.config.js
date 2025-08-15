@@ -44,6 +44,10 @@ const config = {
         hostname: "placehold.co",
         protocol: "https",
       },
+      {
+        hostname: "i.ibb.co.com",
+        protocol: "https",
+      },
     ],
   },
 };

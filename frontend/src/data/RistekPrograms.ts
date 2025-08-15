@@ -1,6 +1,8 @@
 import { type ProgramType } from "@/types/image";
 import fosclass from "../../public/IMG_4585.webp";
 import ost from "../../public/IMG_2402.png";
+import femaleintech from "../../public/femaleintech-hero.png";
+import sandbox from "../../public/WhatsApp Image 2025-08-14 at 20.30.42_7671f735.png";
 
 export const ristekPrograms: ProgramType[] = [
   {
@@ -22,7 +24,7 @@ export const ristekPrograms: ProgramType[] = [
       "An immersive training initiative that guides participants through the entire open-source contribution workflow, from repository forking to submitting pull requests.",
   },
   {
-    src: "https://placehold.co/600x400/png",
+    src: sandbox,
     width: 600,
     height: 400,
     alt: "Program 3",
@@ -40,7 +42,7 @@ export const ristekPrograms: ProgramType[] = [
       "An annual flagship event organized by FOSTI that combines intensive workshops with exciting competitions to showcase and develop technological talents across various domains.",
   },
   {
-    src: "https://placehold.co/600x400/png",
+    src: femaleintech,
     width: 600,
     height: 400,
     alt: "Program 5",

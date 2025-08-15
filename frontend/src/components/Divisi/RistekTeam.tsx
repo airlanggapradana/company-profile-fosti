@@ -1,6 +1,6 @@
 import React from "react";
 import { TabsContent } from "../ui/tabs";
-import { Card, CardContent, CardFooter } from "../ui/card";
+import { Card, CardContent } from "../ui/card";
 import { ristekTeam } from "@/data/RistekTeam";
 import Image from "next/image";
 import AnimatedContent from "../AnimatedContent/AnimatedContent";
@@ -48,7 +48,6 @@ const RistekTeam = () => {
               <CardContent className="flex flex-col items-center gap-1.5 p-0 xs:gap-2">
                 <div className="relative h-16 w-16 xs:h-20 xs:w-20 sm:h-24 sm:w-24">
                   <Image
-                    unoptimized
                     src={member.src}
                     layout="fill"
                     objectFit="cover"

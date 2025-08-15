@@ -1,10 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import { Card } from "./ui/card";
-import { ShineBorder } from "./magicui/shine-border";
-import Image from "next/image";
-import image from "../../public/image1_blrfxf.webp";
 import { TextAnimate } from "./magicui/text-animate";
 import ImageCollage from "./ImageCollage";
 import RotatingText from "../components/RotatingText/RotatingText";

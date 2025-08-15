@@ -1,8 +1,7 @@
 "use client";
-import React, { useState } from "react";
-import { X } from "lucide-react";
+import React from "react";
 import ImageCard from "./ImageCard";
-import { images } from "../data/images";
+import { images } from "@/data/images";
 
 const ImageCollage: React.FC = () => {
   return (

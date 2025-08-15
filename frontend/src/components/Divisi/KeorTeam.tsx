@@ -2,8 +2,6 @@ import React from "react";
 import { TabsContent } from "../ui/tabs";
 import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
-import { Button } from "../ui/button";
-import { Linkedin } from "lucide-react";
 import { keorTeam } from "@/data/KeorTeam";
 import AnimatedContent from "../AnimatedContent/AnimatedContent";
 import { ShineBorder } from "../magicui/shine-border";
@@ -50,7 +48,6 @@ const KeorTeam = () => {
               <CardContent className="flex flex-col items-center gap-1.5 p-0 xs:gap-2">
                 <div className="relative h-16 w-16 xs:h-20 xs:w-20 sm:h-24 sm:w-24">
                   <Image
-                    unoptimized
                     src={member.src}
                     layout="fill"
                     objectFit="cover"

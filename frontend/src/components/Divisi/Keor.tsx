@@ -36,10 +36,7 @@ const Keor = () => {
 
         <div className="mb-4 flex-shrink-0 sm:mb-0">
           <Image
-            unoptimized
-            priority
             src={fotbar}
-            loading={"eager"}
             alt="Keor Fotbar"
             className="h-44 w-80 rounded-xl object-cover shadow-md sm:h-56 sm:w-80 md:h-[18rem] md:w-[28rem] lg:h-[25rem] lg:w-[45rem]"
           />

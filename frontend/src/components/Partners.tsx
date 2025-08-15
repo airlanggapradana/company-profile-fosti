@@ -17,7 +17,7 @@ const Partners = () => {
         </p>
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-5 rounded-2xl bg-gradient-to-tr from-teal-500 to-slate-800 p-4 shadow-lg ring-2 ring-teal-300/40 md:flex-row md:gap-8">
+      <div className="flex flex-col items-center justify-center gap-5 rounded-2xl bg-gradient-to-b from-red-500 to-red-900 p-4 shadow-lg ring-2 ring-red-500 md:flex-row md:gap-8">
         <Image
           src={
             "https://news.ums.ac.id/id/wp-content/uploads/sites/2/2022/12/Resmi_Logo_UMS_Color_FullText.png"
