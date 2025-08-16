@@ -5,6 +5,7 @@ import { type Metadata } from "next";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: {
@@ -26,6 +27,7 @@ export default function RootLayout({
               <Navbar />
               {children}
               <Analytics />
+              <SpeedInsights />
               <Footer />
             </main>
           </AntdRegistry>
