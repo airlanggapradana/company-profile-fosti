@@ -4,6 +4,7 @@ import React from "react";
 import { TextAnimate } from "./magicui/text-animate";
 import ImageCollage from "./ImageCollage";
 import RotatingText from "../components/RotatingText/RotatingText";
+import { env } from "@/env";
 
 const Hero = () => {
   return (
@@ -44,7 +45,7 @@ const Hero = () => {
           </TextAnimate>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link
-              href={"https://oprec-fosti.vercel.app/"}
+              href={env.NEXT_PUBLIC_OPREC_URL}
               className="flex items-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-white dark:bg-gradient-to-tr dark:from-red-500 dark:to-orange-500"
               target="_blank"
             >
