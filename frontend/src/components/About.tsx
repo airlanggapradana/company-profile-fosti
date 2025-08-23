@@ -26,15 +26,15 @@ const About = () => {
           <HeroVideoDialog
             className="block dark:hidden"
             animationStyle="from-center"
-            videoSrc="https://www.youtube.com/embed/Mh4lx5Yl3bs?si=R9kkAxdM1imp-1Ld"
-            thumbnailSrc={thumbnail.src}
+            videoSrc="https://www.youtube.com/embed/DxwXP8rp5qg?si=xMSnKT1btIczpxoI"
+            thumbnailSrc="https://i9.ytimg.com/vi_webp/DxwXP8rp5qg/maxresdefault.webp?v=68a984dc&sqp=CPSfpsUG&rs=AOn4CLDTNOXl_gN4OKS7e92nYJ9GeeUb9A"
             thumbnailAlt="Hero Video"
           />
           <HeroVideoDialog
             className="hidden dark:block"
             animationStyle="from-center"
-            videoSrc="https://www.youtube.com/embed/Mh4lx5Yl3bs?si=R9kkAxdM1imp-1Ld"
-            thumbnailSrc={thumbnail.src}
+            videoSrc="https://www.youtube.com/embed/DxwXP8rp5qg?si=xMSnKT1btIczpxoI"
+            thumbnailSrc="https://i9.ytimg.com/vi_webp/DxwXP8rp5qg/maxresdefault.webp?v=68a984dc&sqp=CPSfpsUG&rs=AOn4CLDTNOXl_gN4OKS7e92nYJ9GeeUb9A"
             thumbnailAlt="Hero Video"
           />
         </div>
