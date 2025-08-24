@@ -4,7 +4,7 @@ import Image, { type StaticImageData } from "next/image";
 import { Card } from "./ui/card";
 import img from "@/utils/constant";
 import HeroVideoDialog from "./magicui/hero-video-dialog";
-import thumbnail from "../../public/image1_blrfxf.webp";
+import thumbnail from "../../public/thumbnail compro fosti 2025.webp";
 
 const About = () => {
   const about = img.carouselAbout;
@@ -27,14 +27,14 @@ const About = () => {
             className="block dark:hidden"
             animationStyle="from-center"
             videoSrc="https://www.youtube.com/embed/DxwXP8rp5qg?si=xMSnKT1btIczpxoI"
-            thumbnailSrc="https://i9.ytimg.com/vi_webp/DxwXP8rp5qg/maxresdefault.webp?v=68a984dc&sqp=CPSfpsUG&rs=AOn4CLDTNOXl_gN4OKS7e92nYJ9GeeUb9A"
+            thumbnailSrc={thumbnail.src}
             thumbnailAlt="Hero Video"
           />
           <HeroVideoDialog
             className="hidden dark:block"
             animationStyle="from-center"
             videoSrc="https://www.youtube.com/embed/DxwXP8rp5qg?si=xMSnKT1btIczpxoI"
-            thumbnailSrc="https://i9.ytimg.com/vi_webp/DxwXP8rp5qg/maxresdefault.webp?v=68a984dc&sqp=CPSfpsUG&rs=AOn4CLDTNOXl_gN4OKS7e92nYJ9GeeUb9A"
+            thumbnailSrc={thumbnail.src}
             thumbnailAlt="Hero Video"
           />
         </div>
